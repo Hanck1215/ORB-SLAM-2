@@ -20,6 +20,9 @@ class ImagePyramid {
         ImagePyramid (int m, int s);
         ~ImagePyramid () {};
 
+        // 存取影像金字塔的層數
+        int inline getLevels() { return mnLevels; }
+
     private :
         int mnLevels; // 影像金字塔的層數
         double mScaleFactor; // 每層之間的縮放係數

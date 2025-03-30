@@ -39,6 +39,8 @@ namespace my_ORB_SLAM2 {
             nDesiredFeaturesPerScale *= factor; 
         }
         mvnFeaturesPerLevel[mnLevels-1] = max(mnPoints-sumFeatures, 0);
+
+        info(); // 輸出影像金字塔相關資訊
     }
 
     /*

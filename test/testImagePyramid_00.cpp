@@ -13,11 +13,8 @@ int main(int argc, char **argv) {
     imagePyramid.setImage(image);
 
     vector<Mat> images = imagePyramid.getImages();
-    for(Mat &image : images) {
-        imshow("image", image);
-        waitKey(0);
-    }
-
+    for(Mat &image : images) { imshow("image", image); }
+    waitKey(0);
     destroyAllWindows();
     return 0;
 }

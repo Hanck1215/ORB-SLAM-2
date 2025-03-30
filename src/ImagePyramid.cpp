@@ -48,10 +48,10 @@ namespace my_ORB_SLAM2 {
     
     @param[in] image 影像金字塔的影像*/
     void ImagePyramid::setImage(Mat image) {
-        image.copyTo(mvImage[0]);
+        mvImage[0] = image;
         for (int level = 1; level < mnLevels; ++level) {
             float scale = mvInvScaleFactor[level];
-            Size size(cvRound((float)image.cols*scale), cvRound((float)image.rows*scale));
+            Size size(cvRound(image.cols*scale), cvRound(image.rows*scale));
             resize(mvImage[level-1], mvImage[level], size, 0, 0, INTER_LINEAR);
         }
     }

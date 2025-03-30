@@ -42,6 +42,9 @@ class ImagePyramid {
         // 存取 每一層影像的矩陣
         inline const vector<Mat>& getImages() { return mvImage; }
 
+        // 設定影像 : 將不同縮放倍率的影像依序放入影像金字塔中
+        void setImage(Mat image);
+
     private :
         int mnLevels; // 影像金字塔的層數
         int mnPoints; // 總共需要提取的特徵點數量

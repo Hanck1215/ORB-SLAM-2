@@ -1,5 +1,6 @@
-#include "include/myORB-SLAM2/ImagePyramid.h"
-#include <opencv2/imgproc.hpp>
+#include <opencv2/core/core.hpp>
+#include "myORB-SLAM2/ImagePyramid.h"
+#include <opencv2/imgproc/imgproc.hpp>
 
 namespace my_ORB_SLAM2 {
     /*
@@ -37,7 +38,7 @@ namespace my_ORB_SLAM2 {
             sumFeatures += mvnFeaturesPerLevel[level];
             nDesiredFeaturesPerScale *= factor; 
         }
-        mvnFeaturesPerLevel[mnLevels-1] = std::max(mnPoints-sumFeatures, 0);
+        mvnFeaturesPerLevel[mnLevels-1] = max(mnPoints-sumFeatures, 0);
     }
 
     /*

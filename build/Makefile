@@ -123,6 +123,19 @@ myORB-SLAM2/fast:
 	$(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/build
 .PHONY : myORB-SLAM2/fast
 
+#=============================================================================
+# Target rules for targets named testImagePyramid_00
+
+# Build rule for target.
+testImagePyramid_00: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testImagePyramid_00
+.PHONY : testImagePyramid_00
+
+# fast build rule for target.
+testImagePyramid_00/fast:
+	$(MAKE) -f test/CMakeFiles/testImagePyramid_00.dir/build.make test/CMakeFiles/testImagePyramid_00.dir/build
+.PHONY : testImagePyramid_00/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -132,6 +145,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... myORB-SLAM2"
+	@echo "... testImagePyramid_00"
 .PHONY : help
 
 

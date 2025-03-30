@@ -38,7 +38,6 @@ namespace my_ORB_SLAM2 {
             nDesiredFeaturesPerScale *= factor; 
         }
         mvnFeaturesPerLevel[mnLevels-1] = std::max(mnPoints-sumFeatures, 0);
-
     }
 
     /*

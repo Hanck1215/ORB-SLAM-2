@@ -55,6 +55,33 @@ class ImagePyramid {
         vector<float> mvScaleFactor; // 儲存每一層影像相較於第一層影像的「縮小倍數」
         vector<float> mvInvScaleFactor; // 儲存每一層影像恢復為第一層影像大小所需的「縮放倍數」
         vector<Mat> mvImage; // 儲存每一層影像的矩陣
+    
+    private :
+        // 輸出影像金字塔相關資訊
+        void info() {
+            printf("Image Pyramid Information: \n");
+            printf("-Levels: %d\n", mnLevels);
+            printf("-Scale Factor: %f\n", mScaleFactor);
+            printf("-Number of Features: %d\n", mnPoints);
+            
+            printf("\n-Features Per Level: \n");
+            printf(" { ");
+            for(int i = 0; i < mnLevels-1; i++) { printf("%d, ", mvnFeaturesPerLevel[i]); }
+            printf("%d", mvnFeaturesPerLevel[mnLevels-1]);
+            printf(" }\n");
+
+            printf("\n-Scale Factors: \n");
+            printf(" { ");
+            for(int i = 0; i < mnLevels-1; i++) { printf("%d, ", mvScaleFactor[i]); }
+            printf("%f", mvScaleFactor[mnLevels-1]);
+            printf(" }\n");
+
+            printf("\n-Inv Scale Factors: \n");
+            printf(" { ");
+            for(int i = 0; i < mnLevels-1; i++) { printf("%d, ", mvInvScaleFactor[i]); }
+            printf("%d", mvInvScaleFactor[mnLevels-1]);
+            printf(" }\n");
+        }
 };
 
 }

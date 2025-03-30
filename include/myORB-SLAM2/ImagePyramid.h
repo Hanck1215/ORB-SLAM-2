@@ -36,6 +36,9 @@ class ImagePyramid {
         // 存取 每一層影像相較於第一層影像的「縮小倍數」
         vector<float> inline getScaleFactors() { return mvScaleFactor; }
 
+        // 存取 每一層影像恢復為第一層影像大小所需的「縮放倍數」
+        vector<float> inline getInvScaleFactors() { return mvInvScaleFactor; }
+
     private :
         int mnLevels; // 影像金字塔的層數
         int mnPoints; // 總共需要提取的特徵點數量

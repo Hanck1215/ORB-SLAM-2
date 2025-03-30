@@ -12,13 +12,21 @@ namespace my_ORB_SLAM2 {
 
 class ImagePyramid {
     public :
-    /*
-    @brief 設定影像金字塔參數
-    
-    @param[in] m 影像金字塔的層數
-    @param[in] s 每層之間的縮放係數 */
-    ImagePyramid (int m, int s);
-    ~ImagePyramid () {};
+        /*
+        @brief 設定影像金字塔參數
+        
+        @param[in] m 影像金字塔的層數
+        @param[in] s 每層之間的縮放係數 (例如 1.2) */
+        ImagePyramid (int m, int s);
+        ~ImagePyramid () {};
+
+    private :
+        int mnLevels; // 影像金字塔的層數
+        double mScaleFactor; // 每層之間的縮放係數
+
+    private :
+
+
 };
 
 }

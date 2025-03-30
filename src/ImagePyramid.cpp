@@ -34,8 +34,7 @@ namespace my_ORB_SLAM2 {
         for(int level = 1; level < mnLevels-1; level++) {
             mvnFeaturesPerLevel[level] = cvRound(nDesiredFeaturesPerScale);
             sumFeatures += mvnFeaturesPerLevel[level];
-            nDesiredFeaturesPerScale *= factor;
-        }
+            nDesiredFeaturesPerScale *= factor; }
         mvnFeaturesPerLevel[mnLevels-1] = std::max(mnPoints-sumFeatures, 0);
 
     }

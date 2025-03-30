@@ -25,6 +25,7 @@ class ImagePyramid {
         double mScaleFactor; // 每層之間的縮放係數
 
     private :
+        vector<int> mvnFeaturesPerLevel; // 儲存每一層影像中應提取的特徵點數
 
 
 };

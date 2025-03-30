@@ -1,4 +1,5 @@
 #include "include/myORB-SLAM2/ImagePyramid.h"
+#include <opencv2/imgproc.hpp>
 
 namespace my_ORB_SLAM2 {
     /*
@@ -45,6 +46,11 @@ namespace my_ORB_SLAM2 {
     
     @param[in] image 影像金字塔的影像*/
     void ImagePyramid::setImage(Mat image) {
-        
+        image.copyTo(mvImage[0]);
+        for (int level = 1; level < mnLevels; ++level) {
+            float scale = mvInvScaleFactor[level];
+            Size size(cvRound((float)image.cols*scale), cvRound((float)image.rows*scale));
+            resize(mvImage[level-1], mvImage[level], size, 0, 0, INTER_LINEAR);
+        }
     }
 }

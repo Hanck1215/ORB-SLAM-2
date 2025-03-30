@@ -18,7 +18,7 @@ class ImagePyramid {
         @param[in] m 影像金字塔的層數
         @param[in] s 每層之間的縮放係數 (例如 1.2) 
         @param[in] N 總共需要提取的特徵點數量 */
-        ImagePyramid (int m, double s, int N);
+        ImagePyramid (int m, float s, int N);
         ~ImagePyramid () {};
 
         // 存取 影像金字塔的層數
@@ -28,7 +28,7 @@ class ImagePyramid {
         inline int getPoints() { return mnPoints; }
 
         // 存取 每層之間的縮放係數
-        inline double getScaleFactor() { return mScaleFactor; }
+        inline float getScaleFactor() { return mScaleFactor; }
 
         // 存取 每一層影像中應提取的「特徵點數」
         inline const vector<int>& getFeaturesPerLevel() { return mvnFeaturesPerLevel; }
@@ -45,7 +45,7 @@ class ImagePyramid {
     private :
         int mnLevels; // 影像金字塔的層數
         int mnPoints; // 總共需要提取的特徵點數量
-        double mScaleFactor; // 每層之間的縮放係數
+        float mScaleFactor; // 每層之間的縮放係數
 
     private :
         vector<int> mvnFeaturesPerLevel; // 儲存每一層影像中應提取的「特徵點數」

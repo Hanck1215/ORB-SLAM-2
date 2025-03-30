@@ -3,6 +3,10 @@
 
 #include <vector>
 #include <list>
+#include <cstdio>
+
+#include <opencv2/core.hpp>
+#include <opencv2/imgproc.hpp>
 
 using namespace cv;
 using namespace std;
@@ -71,14 +75,14 @@ class ImagePyramid {
 
             printf("\n-Scale Factors: \n");
             printf(" { ");
-            for(int i = 0; i < mnLevels-1; i++) { printf("%d, ", mvScaleFactor[i]); }
+            for(int i = 0; i < mnLevels-1; i++) { printf("%f, ", mvScaleFactor[i]); }
             printf("%f", mvScaleFactor[mnLevels-1]);
             printf(" }\n");
 
             printf("\n-Inv Scale Factors: \n");
             printf(" { ");
-            for(int i = 0; i < mnLevels-1; i++) { printf("%d, ", mvInvScaleFactor[i]); }
-            printf("%d", mvInvScaleFactor[mnLevels-1]);
+            for(int i = 0; i < mnLevels-1; i++) { printf("%f, ", mvInvScaleFactor[i]); }
+            printf("%f", mvInvScaleFactor[mnLevels-1]);
             printf(" }\n");
         }
 };

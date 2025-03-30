@@ -110,6 +110,19 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named myORB-SLAM2
+
+# Build rule for target.
+myORB-SLAM2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 myORB-SLAM2
+.PHONY : myORB-SLAM2
+
+# fast build rule for target.
+myORB-SLAM2/fast:
+	$(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/build
+.PHONY : myORB-SLAM2/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -118,6 +131,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... myORB-SLAM2"
 .PHONY : help
 
 

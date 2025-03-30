@@ -1,0 +1,10 @@
+file(REMOVE_RECURSE
+  "../../lib/libmyORB-SLAM2.pdb"
+  "../../lib/libmyORB-SLAM2.so"
+  "CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.o"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/myORB-SLAM2.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

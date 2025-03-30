@@ -26,7 +26,11 @@
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
-					"source" : "src"
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						0
+					]
 				},
 				{
 					"build" : "test",
@@ -49,10 +53,23 @@
 						1,
 						2
 					],
-					"name" : "myORB-SLAM2"
+					"name" : "myORB-SLAM2",
+					"targetIndexes" : 
+					[
+						0
+					]
 				}
 			],
-			"targets" : []
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "myORB-SLAM2::@145eef247bfb46b6828c",
+					"jsonFile" : "target-myORB-SLAM2-Release-9dd02c2ff849f8c76cd5.json",
+					"name" : "myORB-SLAM2",
+					"projectIndex" : 0
+				}
+			]
 		}
 	],
 	"kind" : "codemodel",

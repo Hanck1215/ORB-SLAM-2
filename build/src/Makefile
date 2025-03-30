@@ -110,6 +110,48 @@ depend:
 	cd /home/pinecone/documents/ORB-SLAM-2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+src/CMakeFiles/myORB-SLAM2.dir/rule:
+	cd /home/pinecone/documents/ORB-SLAM-2/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/myORB-SLAM2.dir/rule
+.PHONY : src/CMakeFiles/myORB-SLAM2.dir/rule
+
+# Convenience name for target.
+myORB-SLAM2: src/CMakeFiles/myORB-SLAM2.dir/rule
+
+.PHONY : myORB-SLAM2
+
+# fast build rule for target.
+myORB-SLAM2/fast:
+	cd /home/pinecone/documents/ORB-SLAM-2/build && $(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/build
+.PHONY : myORB-SLAM2/fast
+
+ImagePyramid.o: ImagePyramid.cpp.o
+
+.PHONY : ImagePyramid.o
+
+# target to build an object file
+ImagePyramid.cpp.o:
+	cd /home/pinecone/documents/ORB-SLAM-2/build && $(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.o
+.PHONY : ImagePyramid.cpp.o
+
+ImagePyramid.i: ImagePyramid.cpp.i
+
+.PHONY : ImagePyramid.i
+
+# target to preprocess a source file
+ImagePyramid.cpp.i:
+	cd /home/pinecone/documents/ORB-SLAM-2/build && $(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.i
+.PHONY : ImagePyramid.cpp.i
+
+ImagePyramid.s: ImagePyramid.cpp.s
+
+.PHONY : ImagePyramid.s
+
+# target to generate assembly for a file
+ImagePyramid.cpp.s:
+	cd /home/pinecone/documents/ORB-SLAM-2/build && $(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.s
+.PHONY : ImagePyramid.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -118,6 +160,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... myORB-SLAM2"
+	@echo "... ImagePyramid.o"
+	@echo "... ImagePyramid.i"
+	@echo "... ImagePyramid.s"
 .PHONY : help
 
 

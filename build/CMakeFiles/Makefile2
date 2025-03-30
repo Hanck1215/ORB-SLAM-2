@@ -74,7 +74,7 @@ clean: test/clean
 # Directory level rules for directory src
 
 # Recursive "all" directory target.
-src/all:
+src/all: src/CMakeFiles/myORB-SLAM2.dir/all
 
 .PHONY : src/all
 
@@ -84,7 +84,7 @@ src/preinstall:
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
-src/clean:
+src/clean: src/CMakeFiles/myORB-SLAM2.dir/clean
 
 .PHONY : src/clean
 
@@ -105,6 +105,33 @@ test/preinstall:
 test/clean:
 
 .PHONY : test/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/myORB-SLAM2.dir
+
+# All Build rule for target.
+src/CMakeFiles/myORB-SLAM2.dir/all:
+	$(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/depend
+	$(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pinecone/documents/ORB-SLAM-2/build/CMakeFiles --progress-num=1,2 "Built target myORB-SLAM2"
+.PHONY : src/CMakeFiles/myORB-SLAM2.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/myORB-SLAM2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pinecone/documents/ORB-SLAM-2/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/myORB-SLAM2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pinecone/documents/ORB-SLAM-2/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/myORB-SLAM2.dir/rule
+
+# Convenience name for target.
+myORB-SLAM2: src/CMakeFiles/myORB-SLAM2.dir/rule
+
+.PHONY : myORB-SLAM2
+
+# clean rule for target.
+src/CMakeFiles/myORB-SLAM2.dir/clean:
+	$(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/clean
+.PHONY : src/CMakeFiles/myORB-SLAM2.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

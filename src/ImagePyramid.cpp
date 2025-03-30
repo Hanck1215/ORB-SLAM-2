@@ -39,4 +39,12 @@ namespace my_ORB_SLAM2 {
         mvnFeaturesPerLevel[mnLevels-1] = std::max(mnPoints-sumFeatures, 0);
 
     }
+
+    /*
+    @brief 設定影像 : 將不同縮放倍率的影像依序放入影像金字塔中
+    
+    @param[in] image 影像金字塔的影像*/
+    void ImagePyramid::setImage(Mat image) {
+        
+    }
 }

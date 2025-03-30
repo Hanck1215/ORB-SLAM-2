@@ -19,7 +19,7 @@ namespace my_ORB_SLAM2 {
         mvInvScaleFactor.resize(mnLevels);
         mvImage.resize(mnLevels);
 
-
+        // 初始化影像金字塔中，每一層的縮小倍數與反向縮放倍數
         mvScaleFactor[0] = 1.0f;
         mvInvScaleFactor[0] = 1.0f;
         for(int i = 1; i < mnLevels; i++) {

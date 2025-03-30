@@ -30,6 +30,9 @@ class ImagePyramid {
         // 存取 每層之間的縮放係數
         int inline getScaleFactor() { return mScaleFactor; }
 
+        // 存取 每一層影像中應提取的「特徵點數」
+        vector<int> inline getFeaturesPerLevel() { return mvnFeaturesPerLevel; }
+
     private :
         int mnLevels; // 影像金字塔的層數
         int mnPoints; // 總共需要提取的特徵點數量

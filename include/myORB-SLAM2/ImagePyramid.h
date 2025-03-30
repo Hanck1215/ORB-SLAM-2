@@ -26,6 +26,7 @@ class ImagePyramid {
 
     private :
         int mnLevels; // 影像金字塔的層數
+        int mnPoints; // 總共需要提取的特徵點數量
         double mScaleFactor; // 每層之間的縮放係數
 
     private :

@@ -1,6 +1,6 @@
 #include "myORB-SLAM2/ImagePyramid.h" // 引入自定義的 ImagePyramid 類別
 #include <opencv2/opencv.hpp> // 引入 OpenCV 的核心功能和影像處理功能
-#include <chrono>
+#include <chrono> // 提供高精度時間測量功能
 
 using namespace my_ORB_SLAM2; // 使用自定義命名空間 my_ORB_SLAM2
 using namespace std; // 使用標準命名空間

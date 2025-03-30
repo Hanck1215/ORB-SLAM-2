@@ -24,6 +24,9 @@ class ImagePyramid {
         // 存取 影像金字塔的層數
         int inline getLevels() { return mnLevels; }
 
+        // 存取 總共需要提取的特徵點數量
+        int inline getPoints() { return mnPoints; }
+
         // 存取 每層之間的縮放係數
         int inline getScaleFactor() { return mScaleFactor; }
 

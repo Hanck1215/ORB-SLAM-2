@@ -22,25 +22,25 @@ class ImagePyramid {
         ~ImagePyramid () {};
 
         // 存取 影像金字塔的層數
-        int inline getLevels() { return mnLevels; }
+        inline int  getLevels() { return mnLevels; }
 
         // 存取 總共需要提取的特徵點數量
-        int inline getPoints() { return mnPoints; }
+        inline int  getPoints() { return mnPoints; }
 
         // 存取 每層之間的縮放係數
-        int inline getScaleFactor() { return mScaleFactor; }
+        inline int  getScaleFactor() { return mScaleFactor; }
 
         // 存取 每一層影像中應提取的「特徵點數」
-        vector<int> inline getFeaturesPerLevel() { return mvnFeaturesPerLevel; }
+        inline vector<int>  getFeaturesPerLevel() { return mvnFeaturesPerLevel; }
 
         // 存取 每一層影像相較於第一層影像的「縮小倍數」
-        vector<float> inline getScaleFactors() { return mvScaleFactor; }
+        inline vector<float>  getScaleFactors() { return mvScaleFactor; }
 
         // 存取 每一層影像恢復為第一層影像大小所需的「縮放倍數」
-        vector<float> inline getInvScaleFactors() { return mvInvScaleFactor; }
+        inline vector<float>  getInvScaleFactors() { return mvInvScaleFactor; }
 
         // 存取 每一層影像的矩陣
-        vector<Mat> inline getImages() { return mvImage; }
+        inline vector<Mat> getImages() { return mvImage; }
 
     private :
         int mnLevels; // 影像金字塔的層數

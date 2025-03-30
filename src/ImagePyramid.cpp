@@ -27,6 +27,16 @@ namespace my_ORB_SLAM2 {
             mvInvScaleFactor[level] = 1.0f / mvScaleFactor[level];
         }
 
+        // 計算影像金字塔中每一層應提取的特徵點數量 (根據公式)
+        int sumFeatures = 0;
+        float factor = 1.0f / mScaleFactor;
+        float nDesiredFeaturesPerScale = (mnPoints*(1-factor)) / (1-(float)pow((double)factor, (double)mnLevels));
+        for(int level = 1; level < mnLevels-1; level++) {
+            mvnFeaturesPerLevel[level] = cvRound(nDesiredFeaturesPerScale);
+            sumFeatures += mvnFeaturesPerLevel[level];
+            nDesiredFeaturesPerScale *= factor;
+        }
+        mvnFeaturesPerLevel[mnLevels-1] = std::max(mnPoints-sumFeatures, 0);
 
     }
 }

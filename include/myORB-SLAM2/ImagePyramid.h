@@ -63,23 +63,23 @@ class ImagePyramid {
         // 輸出影像金字塔相關資訊
         void info() {
             printf("Image Pyramid Information: \n");
-            printf("-Levels: %d\n", mnLevels);
-            printf("-Scale Factor: %f\n", mScaleFactor);
-            printf("-Number of Features: %d\n", mnPoints);
+            printf(" - Levels: %d\n", mnLevels);
+            printf(" - Scale Factor: %f\n", mScaleFactor);
+            printf(" - Number of Features: %d\n", mnPoints);
             
-            printf("\n-Features Per Level: \n");
+            printf("\n - Features Per Level: \n");
             printf(" { ");
             for(int i = 0; i < mnLevels-1; i++) { printf("%d, ", mvnFeaturesPerLevel[i]); }
             printf("%d", mvnFeaturesPerLevel[mnLevels-1]);
             printf(" }\n");
 
-            printf("\n-Scale Factors: \n");
+            printf("\n - Scale Factors: \n");
             printf(" { ");
             for(int i = 0; i < mnLevels-1; i++) { printf("%f, ", mvScaleFactor[i]); }
             printf("%f", mvScaleFactor[mnLevels-1]);
             printf(" }\n");
 
-            printf("\n-Inv Scale Factors: \n");
+            printf("\n - Inv Scale Factors: \n");
             printf(" { ");
             for(int i = 0; i < mnLevels-1; i++) { printf("%f, ", mvInvScaleFactor[i]); }
             printf("%f", mvInvScaleFactor[mnLevels-1]);

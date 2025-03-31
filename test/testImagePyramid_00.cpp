@@ -14,7 +14,7 @@ int main(int argc, char **argv) {
 
     // 建立影像金字塔物件，設定層數為 8，每層縮放係數為 1.2，待提取的總特徵點數量為 2000
     std::chrono::steady_clock::time_point t1 = std::chrono::steady_clock::now();
-    ImagePyramid imagePyramid(8, 1.2, 2000);
+    ImagePyramid imagePyramid(3, 1.2, 2000);
     std::chrono::steady_clock::time_point t2 = std::chrono::steady_clock::now();
     std::chrono::duration<double> time_used = 
     std::chrono::duration_cast<std::chrono::duration<double>>(t2 - t1);

@@ -3,4 +3,4 @@
 
 test/CMakeFiles/testImagePyramid_00.dir/testImagePyramid_00.cpp.o
  ../include/myORB-SLAM2/ImagePyramid.h
- /home/pinecone/documents/ORB-SLAM-2/test/testImagePyramid_00.cpp
+ /home/pinecone/ORB-SLAM-2/test/testImagePyramid_00.cpp

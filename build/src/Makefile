@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pinecone/documents/ORB-SLAM-2
+CMAKE_SOURCE_DIR = /home/pinecone/ORB-SLAM-2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pinecone/documents/ORB-SLAM-2/build
+CMAKE_BINARY_DIR = /home/pinecone/ORB-SLAM-2/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/pinecone/documents/ORB-SLAM-2/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/pinecone/documents/ORB-SLAM-2/build/CMakeFiles /home/pinecone/documents/ORB-SLAM-2/build/src/CMakeFiles/progress.marks
-	cd /home/pinecone/documents/ORB-SLAM-2/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pinecone/documents/ORB-SLAM-2/build/CMakeFiles 0
+	cd /home/pinecone/ORB-SLAM-2/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/pinecone/ORB-SLAM-2/build/CMakeFiles /home/pinecone/ORB-SLAM-2/build/src/CMakeFiles/progress.marks
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pinecone/ORB-SLAM-2/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/pinecone/documents/ORB-SLAM-2/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/pinecone/documents/ORB-SLAM-2/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/pinecone/documents/ORB-SLAM-2/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/pinecone/documents/ORB-SLAM-2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/pinecone/ORB-SLAM-2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/myORB-SLAM2.dir/rule:
-	cd /home/pinecone/documents/ORB-SLAM-2/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/myORB-SLAM2.dir/rule
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/myORB-SLAM2.dir/rule
 .PHONY : src/CMakeFiles/myORB-SLAM2.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ myORB-SLAM2: src/CMakeFiles/myORB-SLAM2.dir/rule
 
 # fast build rule for target.
 myORB-SLAM2/fast:
-	cd /home/pinecone/documents/ORB-SLAM-2/build && $(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/build
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/build
 .PHONY : myORB-SLAM2/fast
 
 ImagePyramid.o: ImagePyramid.cpp.o
@@ -131,7 +131,7 @@ ImagePyramid.o: ImagePyramid.cpp.o
 
 # target to build an object file
 ImagePyramid.cpp.o:
-	cd /home/pinecone/documents/ORB-SLAM-2/build && $(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.o
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.o
 .PHONY : ImagePyramid.cpp.o
 
 ImagePyramid.i: ImagePyramid.cpp.i
@@ -140,7 +140,7 @@ ImagePyramid.i: ImagePyramid.cpp.i
 
 # target to preprocess a source file
 ImagePyramid.cpp.i:
-	cd /home/pinecone/documents/ORB-SLAM-2/build && $(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.i
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.i
 .PHONY : ImagePyramid.cpp.i
 
 ImagePyramid.s: ImagePyramid.cpp.s
@@ -149,7 +149,7 @@ ImagePyramid.s: ImagePyramid.cpp.s
 
 # target to generate assembly for a file
 ImagePyramid.cpp.s:
-	cd /home/pinecone/documents/ORB-SLAM-2/build && $(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.s
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.s
 .PHONY : ImagePyramid.cpp.s
 
 # Help Target
@@ -175,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/pinecone/documents/ORB-SLAM-2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/pinecone/ORB-SLAM-2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

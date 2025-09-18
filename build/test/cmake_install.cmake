@@ -1,4 +1,4 @@
-# Install script for directory: /home/pinecone/documents/ORB-SLAM-2/test
+# Install script for directory: /home/pinecone/ORB-SLAM-2/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

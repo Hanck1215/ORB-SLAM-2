@@ -18,11 +18,11 @@ opencv2/core.hpp
 opencv2/imgproc.hpp
 -
 
-/home/pinecone/documents/ORB-SLAM-2/src/ImagePyramid.cpp
+/home/pinecone/ORB-SLAM-2/src/ImagePyramid.cpp
 opencv2/core/core.hpp
 -
 myORB-SLAM2/ImagePyramid.h
-/home/pinecone/documents/ORB-SLAM-2/src/myORB-SLAM2/ImagePyramid.h
+/home/pinecone/ORB-SLAM-2/src/myORB-SLAM2/ImagePyramid.h
 opencv2/imgproc/imgproc.hpp
 -
 

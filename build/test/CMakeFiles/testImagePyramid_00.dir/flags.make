@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++17 -O3 -O3 -DNDEBUG
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/include/eigen3 -I/home/pinecone/documents/ORB-SLAM-2/include -I/home/pinecone/documents/ORB-SLAM-2 -isystem /usr/local/include/opencv 
+CXX_INCLUDES = -I/usr/include/eigen3 -I/home/pinecone/ORB-SLAM-2/include -I/home/pinecone/ORB-SLAM-2 -isystem /usr/local/include/opencv 
 

@@ -46,7 +46,7 @@ class ImagePyramid {
         inline const vector<Mat>& getImages() { return mvImage; }
 
         // 設定影像 : 將不同縮放倍率的影像依序放入影像金字塔中
-        void setImage(Mat image);
+        void setImage(const Mat &image);
 
     private :
         int mnLevels; // 影像金字塔的層數

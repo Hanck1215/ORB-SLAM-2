@@ -12,7 +12,7 @@ int main(int argc, char **argv) {
     string path = argv[1]; // 從命令列參數中獲取影像路徑
     Mat image = imread(path); // 使用 OpenCV 的 imread 函式讀取影像
 
-    // 建立影像金字塔物件，設定層數為 8，每層縮放係數為 1.2，待提取的總特徵點數量為 2000
+    // 建立影像金字塔物件，設定層數為 3，每層縮放係數為 1.2，待提取的總特徵點數量為 2000
     std::chrono::steady_clock::time_point t1 = std::chrono::steady_clock::now();
     ImagePyramid imagePyramid(3, 1.2, 2000);
     std::chrono::steady_clock::time_point t2 = std::chrono::steady_clock::now();

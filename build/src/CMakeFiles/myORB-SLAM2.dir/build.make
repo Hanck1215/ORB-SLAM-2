@@ -60,24 +60,39 @@ include src/CMakeFiles/myORB-SLAM2.dir/flags.make
 src/CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.o: src/CMakeFiles/myORB-SLAM2.dir/flags.make
 src/CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.o: ../src/ImagePyramid.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pinecone/ORB-SLAM-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.o"
-	cd /home/pinecone/ORB-SLAM-2/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.o -c /home/pinecone/ORB-SLAM-2/src/ImagePyramid.cpp
+	cd /home/pinecone/ORB-SLAM-2/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.o -c /home/pinecone/ORB-SLAM-2/src/ImagePyramid.cpp
 
 src/CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.i"
-	cd /home/pinecone/ORB-SLAM-2/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pinecone/ORB-SLAM-2/src/ImagePyramid.cpp > CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.i
+	cd /home/pinecone/ORB-SLAM-2/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pinecone/ORB-SLAM-2/src/ImagePyramid.cpp > CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.i
 
 src/CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.s"
-	cd /home/pinecone/ORB-SLAM-2/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pinecone/ORB-SLAM-2/src/ImagePyramid.cpp -o CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.s
+	cd /home/pinecone/ORB-SLAM-2/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pinecone/ORB-SLAM-2/src/ImagePyramid.cpp -o CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.s
+
+src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.o: src/CMakeFiles/myORB-SLAM2.dir/flags.make
+src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.o: ../src/KeyPointExtractor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pinecone/ORB-SLAM-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.o"
+	cd /home/pinecone/ORB-SLAM-2/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.o -c /home/pinecone/ORB-SLAM-2/src/KeyPointExtractor.cpp
+
+src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.i"
+	cd /home/pinecone/ORB-SLAM-2/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pinecone/ORB-SLAM-2/src/KeyPointExtractor.cpp > CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.i
+
+src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.s"
+	cd /home/pinecone/ORB-SLAM-2/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pinecone/ORB-SLAM-2/src/KeyPointExtractor.cpp -o CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.s
 
 # Object files for target myORB-SLAM2
 myORB__SLAM2_OBJECTS = \
-"CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.o"
+"CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.o" \
+"CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.o"
 
 # External object files for target myORB-SLAM2
 myORB__SLAM2_EXTERNAL_OBJECTS =
 
 ../lib/libmyORB-SLAM2.so: src/CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.o
+../lib/libmyORB-SLAM2.so: src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.o
 ../lib/libmyORB-SLAM2.so: src/CMakeFiles/myORB-SLAM2.dir/build.make
 ../lib/libmyORB-SLAM2.so: /usr/local/lib/libopencv_stitching.so.3.4.9
 ../lib/libmyORB-SLAM2.so: /usr/local/lib/libopencv_superres.so.3.4.9
@@ -127,7 +142,7 @@ myORB__SLAM2_EXTERNAL_OBJECTS =
 ../lib/libmyORB-SLAM2.so: /usr/local/lib/libopencv_imgproc.so.3.4.9
 ../lib/libmyORB-SLAM2.so: /usr/local/lib/libopencv_core.so.3.4.9
 ../lib/libmyORB-SLAM2.so: src/CMakeFiles/myORB-SLAM2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pinecone/ORB-SLAM-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library ../../lib/libmyORB-SLAM2.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pinecone/ORB-SLAM-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library ../../lib/libmyORB-SLAM2.so"
 	cd /home/pinecone/ORB-SLAM-2/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/myORB-SLAM2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

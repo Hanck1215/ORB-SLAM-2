@@ -152,6 +152,33 @@ ImagePyramid.cpp.s:
 	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.s
 .PHONY : ImagePyramid.cpp.s
 
+KeyPointExtractor.o: KeyPointExtractor.cpp.o
+
+.PHONY : KeyPointExtractor.o
+
+# target to build an object file
+KeyPointExtractor.cpp.o:
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.o
+.PHONY : KeyPointExtractor.cpp.o
+
+KeyPointExtractor.i: KeyPointExtractor.cpp.i
+
+.PHONY : KeyPointExtractor.i
+
+# target to preprocess a source file
+KeyPointExtractor.cpp.i:
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.i
+.PHONY : KeyPointExtractor.cpp.i
+
+KeyPointExtractor.s: KeyPointExtractor.cpp.s
+
+.PHONY : KeyPointExtractor.s
+
+# target to generate assembly for a file
+KeyPointExtractor.cpp.s:
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.s
+.PHONY : KeyPointExtractor.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -164,6 +191,9 @@ help:
 	@echo "... ImagePyramid.o"
 	@echo "... ImagePyramid.i"
 	@echo "... ImagePyramid.s"
+	@echo "... KeyPointExtractor.o"
+	@echo "... KeyPointExtractor.i"
+	@echo "... KeyPointExtractor.s"
 .PHONY : help
 
 

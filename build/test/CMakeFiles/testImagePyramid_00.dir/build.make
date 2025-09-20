@@ -60,15 +60,15 @@ include test/CMakeFiles/testImagePyramid_00.dir/flags.make
 test/CMakeFiles/testImagePyramid_00.dir/testImagePyramid_00.cpp.o: test/CMakeFiles/testImagePyramid_00.dir/flags.make
 test/CMakeFiles/testImagePyramid_00.dir/testImagePyramid_00.cpp.o: ../test/testImagePyramid_00.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pinecone/ORB-SLAM-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/testImagePyramid_00.dir/testImagePyramid_00.cpp.o"
-	cd /home/pinecone/ORB-SLAM-2/build/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testImagePyramid_00.dir/testImagePyramid_00.cpp.o -c /home/pinecone/ORB-SLAM-2/test/testImagePyramid_00.cpp
+	cd /home/pinecone/ORB-SLAM-2/build/test && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testImagePyramid_00.dir/testImagePyramid_00.cpp.o -c /home/pinecone/ORB-SLAM-2/test/testImagePyramid_00.cpp
 
 test/CMakeFiles/testImagePyramid_00.dir/testImagePyramid_00.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testImagePyramid_00.dir/testImagePyramid_00.cpp.i"
-	cd /home/pinecone/ORB-SLAM-2/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pinecone/ORB-SLAM-2/test/testImagePyramid_00.cpp > CMakeFiles/testImagePyramid_00.dir/testImagePyramid_00.cpp.i
+	cd /home/pinecone/ORB-SLAM-2/build/test && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pinecone/ORB-SLAM-2/test/testImagePyramid_00.cpp > CMakeFiles/testImagePyramid_00.dir/testImagePyramid_00.cpp.i
 
 test/CMakeFiles/testImagePyramid_00.dir/testImagePyramid_00.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testImagePyramid_00.dir/testImagePyramid_00.cpp.s"
-	cd /home/pinecone/ORB-SLAM-2/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pinecone/ORB-SLAM-2/test/testImagePyramid_00.cpp -o CMakeFiles/testImagePyramid_00.dir/testImagePyramid_00.cpp.s
+	cd /home/pinecone/ORB-SLAM-2/build/test && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pinecone/ORB-SLAM-2/test/testImagePyramid_00.cpp -o CMakeFiles/testImagePyramid_00.dir/testImagePyramid_00.cpp.s
 
 # Object files for target testImagePyramid_00
 testImagePyramid_00_OBJECTS = \

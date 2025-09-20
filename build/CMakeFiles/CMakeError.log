@@ -1,21 +1,21 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/pinecone/ORB-SLAM-2/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_792cb/fast && /usr/bin/make -f CMakeFiles/cmTC_792cb.dir/build.make CMakeFiles/cmTC_792cb.dir/build
+Run Build Command(s):/usr/bin/make cmTC_995ca/fast && /usr/bin/make -f CMakeFiles/cmTC_995ca.dir/build.make CMakeFiles/cmTC_995ca.dir/build
 make[1]: Entering directory '/home/pinecone/ORB-SLAM-2/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_792cb.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_792cb.dir/src.c.o   -c /home/pinecone/ORB-SLAM-2/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_792cb
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_792cb.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_792cb.dir/src.c.o  -o cmTC_792cb 
-/usr/bin/ld: CMakeFiles/cmTC_792cb.dir/src.c.o: in function `main':
+Building C object CMakeFiles/cmTC_995ca.dir/src.c.o
+/usr/bin/gcc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_995ca.dir/src.c.o   -c /home/pinecone/ORB-SLAM-2/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_995ca
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_995ca.dir/link.txt --verbose=1
+/usr/bin/gcc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_995ca.dir/src.c.o  -o cmTC_995ca 
+/usr/bin/ld: CMakeFiles/cmTC_995ca.dir/src.c.o: in function `main':
 src.c:(.text+0x46): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_792cb.dir/build.make:87: cmTC_792cb] Error 1
+make[1]: *** [CMakeFiles/cmTC_995ca.dir/build.make:87: cmTC_995ca] Error 1
 make[1]: Leaving directory '/home/pinecone/ORB-SLAM-2/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_792cb/fast] Error 2
+make: *** [Makefile:121: cmTC_995ca/fast] Error 2
 
 
 Source file was:
@@ -41,18 +41,18 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/pinecone/ORB-SLAM-2/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_4ac15/fast && /usr/bin/make -f CMakeFiles/cmTC_4ac15.dir/build.make CMakeFiles/cmTC_4ac15.dir/build
+Run Build Command(s):/usr/bin/make cmTC_adc71/fast && /usr/bin/make -f CMakeFiles/cmTC_adc71.dir/build.make CMakeFiles/cmTC_adc71.dir/build
 make[1]: Entering directory '/home/pinecone/ORB-SLAM-2/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4ac15.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_4ac15.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_4ac15
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4ac15.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_4ac15.dir/CheckFunctionExists.c.o  -o cmTC_4ac15  -lpthreads 
+Building C object CMakeFiles/cmTC_adc71.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_adc71.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_adc71
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_adc71.dir/link.txt --verbose=1
+/usr/bin/gcc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_adc71.dir/CheckFunctionExists.c.o  -o cmTC_adc71  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_4ac15.dir/build.make:87: cmTC_4ac15] Error 1
+make[1]: *** [CMakeFiles/cmTC_adc71.dir/build.make:87: cmTC_adc71] Error 1
 make[1]: Leaving directory '/home/pinecone/ORB-SLAM-2/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_4ac15/fast] Error 2
+make: *** [Makefile:121: cmTC_adc71/fast] Error 2
 
 
 

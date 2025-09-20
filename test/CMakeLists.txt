@@ -1,2 +1,2 @@
-add_executable(testImagePyramid_00 testImagePyramid_00.cpp)
-target_link_libraries(testImagePyramid_00 myORB-SLAM2)
+add_executable(testKeyPointExtractor_00 testKeyPointExtractor_00.cpp)
+target_link_libraries(testKeyPointExtractor_00 myORB-SLAM2)

@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/pinecone/ORB-SLAM-2/build/src",
+  "command": "/usr/bin/g++  -DmyORB_SLAM2_EXPORTS -I/usr/include/eigen3 -I/home/pinecone/ORB-SLAM-2/include -I/home/pinecone/ORB-SLAM-2 -isystem /usr/local/include/opencv  -std=c++17 -O3 -O3 -DNDEBUG -fPIC   -o CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.o -c /home/pinecone/ORB-SLAM-2/src/ImagePyramid.cpp",
+  "file": "/home/pinecone/ORB-SLAM-2/src/ImagePyramid.cpp"
+},
+{
+  "directory": "/home/pinecone/ORB-SLAM-2/build/src",
+  "command": "/usr/bin/g++  -DmyORB_SLAM2_EXPORTS -I/usr/include/eigen3 -I/home/pinecone/ORB-SLAM-2/include -I/home/pinecone/ORB-SLAM-2 -isystem /usr/local/include/opencv  -std=c++17 -O3 -O3 -DNDEBUG -fPIC   -o CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.o -c /home/pinecone/ORB-SLAM-2/src/KeyPointExtractor.cpp",
+  "file": "/home/pinecone/ORB-SLAM-2/src/KeyPointExtractor.cpp"
+},
+{
+  "directory": "/home/pinecone/ORB-SLAM-2/build/test",
+  "command": "/usr/bin/g++   -I/usr/include/eigen3 -I/home/pinecone/ORB-SLAM-2/include -I/home/pinecone/ORB-SLAM-2 -isystem /usr/local/include/opencv  -std=c++17 -O3 -O3 -DNDEBUG   -o CMakeFiles/testKeyPointExtractor_00.dir/testKeyPointExtractor_00.cpp.o -c /home/pinecone/ORB-SLAM-2/test/testKeyPointExtractor_00.cpp",
+  "file": "/home/pinecone/ORB-SLAM-2/test/testKeyPointExtractor_00.cpp"
+}
+]

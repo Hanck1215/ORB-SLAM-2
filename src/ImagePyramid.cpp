@@ -47,12 +47,12 @@ namespace my_ORB_SLAM2 {
     @brief 設定影像 : 將不同縮放倍率的影像依序放入影像金字塔中
     
     @param[in] image 影像金字塔的影像*/
-    void ImagePyramid::setImage(Mat image) {
+    void ImagePyramid::setImage(const Mat &image) {
         mvImage[0] = image;
         for (int level = 1; level < mnLevels; ++level) {
             float scale = mvInvScaleFactor[level];
             Size size(cvRound(image.cols*scale), cvRound(image.rows*scale));
-            resize(mvImage[level-1], mvImage[level], size, 0, 0, INTER_LINEAR);
+            resize(mvImage[level-1], mvImage[level], size, 0, 0, INTER_NEAREST);
         }
     }
 }

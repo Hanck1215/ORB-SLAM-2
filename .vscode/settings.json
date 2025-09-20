@@ -56,5 +56,5 @@
         "chrono": "cpp",
         "ratio": "cpp"
     },
-    "cmake.sourceDirectory": "/wsl.localhost/Ubuntu-20.04/home/pinecone/ORB-SLAM-2"
+    "cmake.sourceDirectory": "/home/pinecone/ORB-SLAM-2"
 }

@@ -28,12 +28,10 @@ class KeyPointExtractor {
         @brief 提取關鍵點的 function
         
         @param[in, out] keyPointsPerLevel 儲存影像金字塔中，每層影像的關鍵點
-        @param[in] imagesPerLevel 影像金字塔的每一層影像
-        @param[in] scaleFactors 每一層影像轉換到第一層尺度的縮放因子 */
+        @param[in] imagesPerLevel 影像金字塔的每一層影像 */
         void extract(
             vector<vector<KeyPoint>> &keyPointsPerLevel, 
-            const vector<Mat> &imagesPerLevel,
-            const vector<float> &scaleFactors
+            const vector<Mat> &imagesPerLevel
         );
     
     private:

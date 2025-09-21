@@ -24,10 +24,9 @@ int main(int argc, char **argv) {
     std::chrono::steady_clock::time_point t1 = std::chrono::steady_clock::now();
     imagePyramid.setImage(image);
     const vector<Mat> &images = imagePyramid.getImages();
-    const vector<float> &scaleFactors = imagePyramid.getScaleFactors();
 
     // 提取關鍵點
-    keyPointExtractor.extract(keyPointsPerLavel, images, scaleFactors);
+    keyPointExtractor.extract(keyPointsPerLavel, images);
     std::chrono::steady_clock::time_point t2 = std::chrono::steady_clock::now();
     std::chrono::duration<double> time_used = 
     std::chrono::duration_cast<std::chrono::duration<double>>(t2 - t1);

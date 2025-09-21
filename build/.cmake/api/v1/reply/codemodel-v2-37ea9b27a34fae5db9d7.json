@@ -76,9 +76,9 @@
 				},
 				{
 					"directoryIndex" : 2,
-					"id" : "testKeyPointExtractor_00::@36f028580bb02cc8272a",
-					"jsonFile" : "target-testKeyPointExtractor_00-Release-437035544a4571b2e459.json",
-					"name" : "testKeyPointExtractor_00",
+					"id" : "testKeyPointExtractor_01::@36f028580bb02cc8272a",
+					"jsonFile" : "target-testKeyPointExtractor_01-Release-3cfb9bc159eedbf0563e.json",
+					"name" : "testKeyPointExtractor_01",
 					"projectIndex" : 0
 				}
 			]

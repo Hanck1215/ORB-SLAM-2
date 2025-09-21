@@ -18,7 +18,7 @@ int main(int argc, char **argv) {
 
     // 宣告關鍵點提取器
     vector<vector<KeyPoint>> keyPointsPerLavel;
-    KeyPointExtractor keyPointExtractor(imagePyramid.getLevels(), 30.0f, 19, imagePyramid.getPoints(), 20, 7, 31);
+    KeyPointExtractor keyPointExtractor(imagePyramid.getLevels(), 30.0f, 19, imagePyramid.getPoints(), 20, 7);
     
     // 設定影像到影像金字塔
     std::chrono::steady_clock::time_point t1 = std::chrono::steady_clock::now();

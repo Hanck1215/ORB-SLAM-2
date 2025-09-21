@@ -6,30 +6,10 @@
 
 #IncludeRegexTransform: 
 
-../include/myORB-SLAM2/ImagePyramid.h
-vector
--
-list
--
-cstdio
--
-opencv2/core.hpp
--
-opencv2/imgproc.hpp
--
-
 ../include/myORB-SLAM2/KeyPointExtractor.h
 vector
 -
 opencv2/features2d.hpp
--
-
-/home/pinecone/ORB-SLAM-2/src/ImagePyramid.cpp
-opencv2/core/core.hpp
--
-myORB-SLAM2/ImagePyramid.h
-/home/pinecone/ORB-SLAM-2/src/myORB-SLAM2/ImagePyramid.h
-opencv2/imgproc/imgproc.hpp
 -
 
 /home/pinecone/ORB-SLAM-2/src/KeyPointExtractor.cpp

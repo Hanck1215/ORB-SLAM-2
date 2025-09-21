@@ -11,14 +11,13 @@ namespace my_ORB_SLAM2 {
     @param[in] maxTh 一開始提取關鍵點時使用的閾值
     @param[in] minTh 放寬標準後，提取關鍵點的閾值
     */
-    KeyPointExtractor::KeyPointExtractor(int nLevels, float defaultGridSize, int paddingPixels, int nKeyPoints, int maxTh, int minTh, int patchSize) {
+    KeyPointExtractor::KeyPointExtractor(int nLevels, float defaultGridSize, int paddingPixels, int nKeyPoints, int maxTh, int minTh) {
         this->nLevels = nLevels;
         this->defaultGridSize = defaultGridSize;
         this->paddingPixels = paddingPixels;
         this->nKeyPoints = nKeyPoints;
         this->maxTh = maxTh;
         this->minTh = minTh;
-        this->patchSize = patchSize;
     };
 
     /*
@@ -28,12 +27,12 @@ namespace my_ORB_SLAM2 {
     @param[in] imagesPerLevel 影像金字塔的每一層影像
     @param[in] scaleFactors 每一層影像轉換到第一層尺度的縮放因子 */
     void KeyPointExtractor::extract(
-        vector<vector<KeyPoint>> &keyPointsPerLavel, 
+        vector<vector<KeyPoint>> &keyPointsPerLevel, 
         const vector<Mat> &imagesPerLevel,
         const vector<float> &scaleFactors
     ) {
-        // 設定 keyPointsPerLavel 大小為影像金字塔層數
-        keyPointsPerLavel.resize(this->nLevels);
+        // 設定 keyPointsPerLevel 大小為影像金字塔層數
+        keyPointsPerLevel.resize(this->nLevels);
 
         // 遍歷每一層影像
         for(size_t level = 0; level < this->nLevels; level++) {
@@ -109,20 +108,16 @@ namespace my_ORB_SLAM2 {
                     }
                 }
             }
-            // 計算該層影像適用的 Patch Size 來計算描述子
-            // 越高層級的影像相對來說需要越大的 Patch Size
-            int scaledPatchSize = patchSize * scaleFactors[level];
 
             // 修飾該層最後提取到的關鍵點
             for(vector<KeyPoint>::iterator vit = keyPoints.begin(); vit != keyPoints.end(); vit++) {
                 (*vit).pt.x += minBorderX; // 增加 offset
                 (*vit).pt.y += minBorderY; // 增加 offset
                 (*vit).octave = level; // 設定關鍵點所屬的金字塔層級
-                (*vit).size = scaledPatchSize; // 設定關鍵點適合的 Patch Size 大小
             }
             
             // 儲存該層的 KeyPoints
-            keyPointsPerLavel[level] = keyPoints;
+            keyPointsPerLevel[level] = keyPoints;
         }
     }
 }

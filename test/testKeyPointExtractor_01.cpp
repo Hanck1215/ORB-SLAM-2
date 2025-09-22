@@ -12,6 +12,7 @@ int main(int argc, char **argv) {
     // 讀取指定影像
     string path = argv[1];
     Mat image = imread(path, 0);
+    Mat RGBImage = imread(path);
 
     // 宣告影像金字塔
     ImagePyramid imagePyramid(3, 1.2, 2000);
@@ -42,9 +43,15 @@ int main(int argc, char **argv) {
 
     // 比較兩者差異
     cv::Mat outImg, cvOutImg;
-    cv::drawKeypoints(images[0], keyPointsPerLavel[0], outImg, cv::Scalar(0,255,0), cv::DrawMatchesFlags::DEFAULT);
-    cv::drawKeypoints(image, cvKeyPoints, cvOutImg, cv::Scalar(0,255,0), cv::DrawMatchesFlags::DEFAULT);
+    cv::drawKeypoints(RGBImage, keyPointsPerLavel[0], outImg, cv::Scalar(0,255,0), cv::DrawMatchesFlags::DEFAULT);
+    cv::drawKeypoints(RGBImage, cvKeyPoints, cvOutImg, cv::Scalar(0,255,0), cv::DrawMatchesFlags::DEFAULT);
     cv::imshow("KeyPoints", outImg);
     cv::imshow("cvKeyPoints", cvOutImg);
-    cv::waitKey(0);
+
+    char key = '\0';
+    while(key != 'q') {
+        key = cv::waitKey(0);
+    }
+    
+    cv::destroyAllWindows();
 }

@@ -4,6 +4,4 @@
 src/CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.o: ../include/myORB-SLAM2/ImagePyramid.h
 src/CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.o: ../src/ImagePyramid.cpp
 
-src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.o: ../include/myORB-SLAM2/KeyPointExtractor.h
-src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.o: ../src/KeyPointExtractor.cpp
 

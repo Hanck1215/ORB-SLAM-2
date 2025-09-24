@@ -152,32 +152,32 @@ ImagePyramid.cpp.s:
 	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.s
 .PHONY : ImagePyramid.cpp.s
 
-KeyPointExtractor.o: KeyPointExtractor.cpp.o
+KeyPointExtractorPyramid.o: KeyPointExtractorPyramid.cpp.o
 
-.PHONY : KeyPointExtractor.o
+.PHONY : KeyPointExtractorPyramid.o
 
 # target to build an object file
-KeyPointExtractor.cpp.o:
-	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.o
-.PHONY : KeyPointExtractor.cpp.o
+KeyPointExtractorPyramid.cpp.o:
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractorPyramid.cpp.o
+.PHONY : KeyPointExtractorPyramid.cpp.o
 
-KeyPointExtractor.i: KeyPointExtractor.cpp.i
+KeyPointExtractorPyramid.i: KeyPointExtractorPyramid.cpp.i
 
-.PHONY : KeyPointExtractor.i
+.PHONY : KeyPointExtractorPyramid.i
 
 # target to preprocess a source file
-KeyPointExtractor.cpp.i:
-	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.i
-.PHONY : KeyPointExtractor.cpp.i
+KeyPointExtractorPyramid.cpp.i:
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractorPyramid.cpp.i
+.PHONY : KeyPointExtractorPyramid.cpp.i
 
-KeyPointExtractor.s: KeyPointExtractor.cpp.s
+KeyPointExtractorPyramid.s: KeyPointExtractorPyramid.cpp.s
 
-.PHONY : KeyPointExtractor.s
+.PHONY : KeyPointExtractorPyramid.s
 
 # target to generate assembly for a file
-KeyPointExtractor.cpp.s:
-	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.s
-.PHONY : KeyPointExtractor.cpp.s
+KeyPointExtractorPyramid.cpp.s:
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractorPyramid.cpp.s
+.PHONY : KeyPointExtractorPyramid.cpp.s
 
 # Help Target
 help:
@@ -191,9 +191,9 @@ help:
 	@echo "... ImagePyramid.o"
 	@echo "... ImagePyramid.i"
 	@echo "... ImagePyramid.s"
-	@echo "... KeyPointExtractor.o"
-	@echo "... KeyPointExtractor.i"
-	@echo "... KeyPointExtractor.s"
+	@echo "... KeyPointExtractorPyramid.o"
+	@echo "... KeyPointExtractorPyramid.i"
+	@echo "... KeyPointExtractorPyramid.s"
 .PHONY : help
 
 

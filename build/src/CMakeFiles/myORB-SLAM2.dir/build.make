@@ -70,29 +70,29 @@ src/CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.s"
 	cd /home/pinecone/ORB-SLAM-2/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pinecone/ORB-SLAM-2/src/ImagePyramid.cpp -o CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.s
 
-src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.o: src/CMakeFiles/myORB-SLAM2.dir/flags.make
-src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.o: ../src/KeyPointExtractor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pinecone/ORB-SLAM-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.o"
-	cd /home/pinecone/ORB-SLAM-2/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.o -c /home/pinecone/ORB-SLAM-2/src/KeyPointExtractor.cpp
+src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractorPyramid.cpp.o: src/CMakeFiles/myORB-SLAM2.dir/flags.make
+src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractorPyramid.cpp.o: ../src/KeyPointExtractorPyramid.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pinecone/ORB-SLAM-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractorPyramid.cpp.o"
+	cd /home/pinecone/ORB-SLAM-2/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/myORB-SLAM2.dir/KeyPointExtractorPyramid.cpp.o -c /home/pinecone/ORB-SLAM-2/src/KeyPointExtractorPyramid.cpp
 
-src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.i"
-	cd /home/pinecone/ORB-SLAM-2/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pinecone/ORB-SLAM-2/src/KeyPointExtractor.cpp > CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.i
+src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractorPyramid.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myORB-SLAM2.dir/KeyPointExtractorPyramid.cpp.i"
+	cd /home/pinecone/ORB-SLAM-2/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pinecone/ORB-SLAM-2/src/KeyPointExtractorPyramid.cpp > CMakeFiles/myORB-SLAM2.dir/KeyPointExtractorPyramid.cpp.i
 
-src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.s"
-	cd /home/pinecone/ORB-SLAM-2/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pinecone/ORB-SLAM-2/src/KeyPointExtractor.cpp -o CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.s
+src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractorPyramid.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myORB-SLAM2.dir/KeyPointExtractorPyramid.cpp.s"
+	cd /home/pinecone/ORB-SLAM-2/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pinecone/ORB-SLAM-2/src/KeyPointExtractorPyramid.cpp -o CMakeFiles/myORB-SLAM2.dir/KeyPointExtractorPyramid.cpp.s
 
 # Object files for target myORB-SLAM2
 myORB__SLAM2_OBJECTS = \
 "CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.o" \
-"CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.o"
+"CMakeFiles/myORB-SLAM2.dir/KeyPointExtractorPyramid.cpp.o"
 
 # External object files for target myORB-SLAM2
 myORB__SLAM2_EXTERNAL_OBJECTS =
 
 ../lib/libmyORB-SLAM2.so: src/CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.o
-../lib/libmyORB-SLAM2.so: src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.o
+../lib/libmyORB-SLAM2.so: src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractorPyramid.cpp.o
 ../lib/libmyORB-SLAM2.so: src/CMakeFiles/myORB-SLAM2.dir/build.make
 ../lib/libmyORB-SLAM2.so: /usr/local/lib/libopencv_stitching.so.3.4.9
 ../lib/libmyORB-SLAM2.so: /usr/local/lib/libopencv_superres.so.3.4.9

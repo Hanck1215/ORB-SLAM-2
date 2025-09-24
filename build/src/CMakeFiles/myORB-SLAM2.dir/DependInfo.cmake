@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/pinecone/ORB-SLAM-2/src/ImagePyramid.cpp" "/home/pinecone/ORB-SLAM-2/build/src/CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.o"
-  "/home/pinecone/ORB-SLAM-2/src/KeyPointExtractor.cpp" "/home/pinecone/ORB-SLAM-2/build/src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractor.cpp.o"
+  "/home/pinecone/ORB-SLAM-2/src/KeyPointExtractorPyramid.cpp" "/home/pinecone/ORB-SLAM-2/build/src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractorPyramid.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

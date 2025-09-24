@@ -1,4 +1,4 @@
-#include "myORB-SLAM2/KeyPointExtractor.h"
+#include "myORB-SLAM2/KeyPointExtractorPyramid.h"
 
 namespace my_ORB_SLAM2 {
     /*
@@ -11,7 +11,7 @@ namespace my_ORB_SLAM2 {
     @param[in] maxTh 一開始提取關鍵點時使用的閾值
     @param[in] minTh 放寬標準後，提取關鍵點的閾值
     */
-    KeyPointExtractor::KeyPointExtractor(int nLevels, float defaultGridSize, int paddingPixels, int nKeyPoints, int maxTh, int minTh) {
+    KeyPointExtractorPyramid::KeyPointExtractorPyramid(int nLevels, float defaultGridSize, int paddingPixels, int nKeyPoints, int maxTh, int minTh) {
         this->nLevels = nLevels;
         this->defaultGridSize = defaultGridSize;
         this->paddingPixels = paddingPixels;
@@ -25,7 +25,7 @@ namespace my_ORB_SLAM2 {
     
     @param[in, out] keyPointsPerLavel 儲存影像金字塔中，每層影像的關鍵點
     @param[in] imagesPerLevel 影像金字塔的每一層影像 */
-    void KeyPointExtractor::extract(
+    void KeyPointExtractorPyramid::extract(
         vector<vector<KeyPoint>> &keyPointsPerLevel, 
         const vector<Mat> &imagesPerLevel
     ) {

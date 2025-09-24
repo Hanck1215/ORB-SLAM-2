@@ -6,13 +6,3 @@
 
 #IncludeRegexTransform: 
 
-../include/myORB-SLAM2/KeyPointExtractor.h
-vector
--
-opencv2/features2d.hpp
--
-
-/home/pinecone/ORB-SLAM-2/src/KeyPointExtractor.cpp
-myORB-SLAM2/KeyPointExtractor.h
-/home/pinecone/ORB-SLAM-2/src/myORB-SLAM2/KeyPointExtractor.h
-

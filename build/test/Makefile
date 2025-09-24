@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/pinecone/ORB-SLAM-2/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +66,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,46 +111,46 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/testKeyPointExtractor_00.dir/rule:
-	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testKeyPointExtractor_00.dir/rule
-.PHONY : test/CMakeFiles/testKeyPointExtractor_00.dir/rule
+test/CMakeFiles/testKeyPointExtractorPyramid_00.dir/rule:
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testKeyPointExtractorPyramid_00.dir/rule
+.PHONY : test/CMakeFiles/testKeyPointExtractorPyramid_00.dir/rule
 
 # Convenience name for target.
-testKeyPointExtractor_00: test/CMakeFiles/testKeyPointExtractor_00.dir/rule
+testKeyPointExtractorPyramid_00: test/CMakeFiles/testKeyPointExtractorPyramid_00.dir/rule
 
-.PHONY : testKeyPointExtractor_00
+.PHONY : testKeyPointExtractorPyramid_00
 
 # fast build rule for target.
-testKeyPointExtractor_00/fast:
-	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f test/CMakeFiles/testKeyPointExtractor_00.dir/build.make test/CMakeFiles/testKeyPointExtractor_00.dir/build
-.PHONY : testKeyPointExtractor_00/fast
+testKeyPointExtractorPyramid_00/fast:
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f test/CMakeFiles/testKeyPointExtractorPyramid_00.dir/build.make test/CMakeFiles/testKeyPointExtractorPyramid_00.dir/build
+.PHONY : testKeyPointExtractorPyramid_00/fast
 
-testKeyPointExtractor_00.o: testKeyPointExtractor_00.cpp.o
+testKeyPointExtractorPyramid_00.o: testKeyPointExtractorPyramid_00.cpp.o
 
-.PHONY : testKeyPointExtractor_00.o
+.PHONY : testKeyPointExtractorPyramid_00.o
 
 # target to build an object file
-testKeyPointExtractor_00.cpp.o:
-	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f test/CMakeFiles/testKeyPointExtractor_00.dir/build.make test/CMakeFiles/testKeyPointExtractor_00.dir/testKeyPointExtractor_00.cpp.o
-.PHONY : testKeyPointExtractor_00.cpp.o
+testKeyPointExtractorPyramid_00.cpp.o:
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f test/CMakeFiles/testKeyPointExtractorPyramid_00.dir/build.make test/CMakeFiles/testKeyPointExtractorPyramid_00.dir/testKeyPointExtractorPyramid_00.cpp.o
+.PHONY : testKeyPointExtractorPyramid_00.cpp.o
 
-testKeyPointExtractor_00.i: testKeyPointExtractor_00.cpp.i
+testKeyPointExtractorPyramid_00.i: testKeyPointExtractorPyramid_00.cpp.i
 
-.PHONY : testKeyPointExtractor_00.i
+.PHONY : testKeyPointExtractorPyramid_00.i
 
 # target to preprocess a source file
-testKeyPointExtractor_00.cpp.i:
-	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f test/CMakeFiles/testKeyPointExtractor_00.dir/build.make test/CMakeFiles/testKeyPointExtractor_00.dir/testKeyPointExtractor_00.cpp.i
-.PHONY : testKeyPointExtractor_00.cpp.i
+testKeyPointExtractorPyramid_00.cpp.i:
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f test/CMakeFiles/testKeyPointExtractorPyramid_00.dir/build.make test/CMakeFiles/testKeyPointExtractorPyramid_00.dir/testKeyPointExtractorPyramid_00.cpp.i
+.PHONY : testKeyPointExtractorPyramid_00.cpp.i
 
-testKeyPointExtractor_00.s: testKeyPointExtractor_00.cpp.s
+testKeyPointExtractorPyramid_00.s: testKeyPointExtractorPyramid_00.cpp.s
 
-.PHONY : testKeyPointExtractor_00.s
+.PHONY : testKeyPointExtractorPyramid_00.s
 
 # target to generate assembly for a file
-testKeyPointExtractor_00.cpp.s:
-	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f test/CMakeFiles/testKeyPointExtractor_00.dir/build.make test/CMakeFiles/testKeyPointExtractor_00.dir/testKeyPointExtractor_00.cpp.s
-.PHONY : testKeyPointExtractor_00.cpp.s
+testKeyPointExtractorPyramid_00.cpp.s:
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f test/CMakeFiles/testKeyPointExtractorPyramid_00.dir/build.make test/CMakeFiles/testKeyPointExtractorPyramid_00.dir/testKeyPointExtractorPyramid_00.cpp.s
+.PHONY : testKeyPointExtractorPyramid_00.cpp.s
 
 # Help Target
 help:
@@ -158,12 +158,12 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... testKeyPointExtractor_00"
-	@echo "... testKeyPointExtractor_00.o"
-	@echo "... testKeyPointExtractor_00.i"
-	@echo "... testKeyPointExtractor_00.s"
+	@echo "... edit_cache"
+	@echo "... testKeyPointExtractorPyramid_00"
+	@echo "... testKeyPointExtractorPyramid_00.o"
+	@echo "... testKeyPointExtractorPyramid_00.i"
+	@echo "... testKeyPointExtractorPyramid_00.s"
 .PHONY : help
 
 

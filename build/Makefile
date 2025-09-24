@@ -124,17 +124,17 @@ myORB-SLAM2/fast:
 .PHONY : myORB-SLAM2/fast
 
 #=============================================================================
-# Target rules for targets named testKeyPointExtractor_00
+# Target rules for targets named testKeyPointExtractorPyramid_00
 
 # Build rule for target.
-testKeyPointExtractor_00: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 testKeyPointExtractor_00
-.PHONY : testKeyPointExtractor_00
+testKeyPointExtractorPyramid_00: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testKeyPointExtractorPyramid_00
+.PHONY : testKeyPointExtractorPyramid_00
 
 # fast build rule for target.
-testKeyPointExtractor_00/fast:
-	$(MAKE) -f test/CMakeFiles/testKeyPointExtractor_00.dir/build.make test/CMakeFiles/testKeyPointExtractor_00.dir/build
-.PHONY : testKeyPointExtractor_00/fast
+testKeyPointExtractorPyramid_00/fast:
+	$(MAKE) -f test/CMakeFiles/testKeyPointExtractorPyramid_00.dir/build.make test/CMakeFiles/testKeyPointExtractorPyramid_00.dir/build
+.PHONY : testKeyPointExtractorPyramid_00/fast
 
 # Help Target
 help:
@@ -145,7 +145,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... myORB-SLAM2"
-	@echo "... testKeyPointExtractor_00"
+	@echo "... testKeyPointExtractorPyramid_00"
 .PHONY : help
 
 

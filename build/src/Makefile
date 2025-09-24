@@ -179,6 +179,33 @@ KeyPointExtractorPyramid.cpp.s:
 	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractorPyramid.cpp.s
 .PHONY : KeyPointExtractorPyramid.cpp.s
 
+KeyPointsRegionalQuadTree.o: KeyPointsRegionalQuadTree.cpp.o
+
+.PHONY : KeyPointsRegionalQuadTree.o
+
+# target to build an object file
+KeyPointsRegionalQuadTree.cpp.o:
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/KeyPointsRegionalQuadTree.cpp.o
+.PHONY : KeyPointsRegionalQuadTree.cpp.o
+
+KeyPointsRegionalQuadTree.i: KeyPointsRegionalQuadTree.cpp.i
+
+.PHONY : KeyPointsRegionalQuadTree.i
+
+# target to preprocess a source file
+KeyPointsRegionalQuadTree.cpp.i:
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/KeyPointsRegionalQuadTree.cpp.i
+.PHONY : KeyPointsRegionalQuadTree.cpp.i
+
+KeyPointsRegionalQuadTree.s: KeyPointsRegionalQuadTree.cpp.s
+
+.PHONY : KeyPointsRegionalQuadTree.s
+
+# target to generate assembly for a file
+KeyPointsRegionalQuadTree.cpp.s:
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/KeyPointsRegionalQuadTree.cpp.s
+.PHONY : KeyPointsRegionalQuadTree.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -194,6 +221,9 @@ help:
 	@echo "... KeyPointExtractorPyramid.o"
 	@echo "... KeyPointExtractorPyramid.i"
 	@echo "... KeyPointExtractorPyramid.s"
+	@echo "... KeyPointsRegionalQuadTree.o"
+	@echo "... KeyPointsRegionalQuadTree.i"
+	@echo "... KeyPointsRegionalQuadTree.s"
 .PHONY : help
 
 

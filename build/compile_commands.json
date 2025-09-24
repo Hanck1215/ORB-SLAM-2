@@ -10,6 +10,11 @@
   "file": "/home/pinecone/ORB-SLAM-2/src/KeyPointExtractorPyramid.cpp"
 },
 {
+  "directory": "/home/pinecone/ORB-SLAM-2/build/src",
+  "command": "/usr/bin/g++  -DmyORB_SLAM2_EXPORTS -I/usr/include/eigen3 -I/home/pinecone/ORB-SLAM-2/include -I/home/pinecone/ORB-SLAM-2 -isystem /usr/local/include/opencv  -std=c++17 -O3 -O3 -DNDEBUG -fPIC   -o CMakeFiles/myORB-SLAM2.dir/KeyPointsRegionalQuadTree.cpp.o -c /home/pinecone/ORB-SLAM-2/src/KeyPointsRegionalQuadTree.cpp",
+  "file": "/home/pinecone/ORB-SLAM-2/src/KeyPointsRegionalQuadTree.cpp"
+},
+{
   "directory": "/home/pinecone/ORB-SLAM-2/build/test",
   "command": "/usr/bin/g++   -I/usr/include/eigen3 -I/home/pinecone/ORB-SLAM-2/include -I/home/pinecone/ORB-SLAM-2 -isystem /usr/local/include/opencv  -std=c++17 -O3 -O3 -DNDEBUG   -o CMakeFiles/testKeyPointExtractorPyramid_00.dir/testKeyPointExtractorPyramid_00.cpp.o -c /home/pinecone/ORB-SLAM-2/test/testKeyPointExtractorPyramid_00.cpp",
   "file": "/home/pinecone/ORB-SLAM-2/test/testKeyPointExtractorPyramid_00.cpp"

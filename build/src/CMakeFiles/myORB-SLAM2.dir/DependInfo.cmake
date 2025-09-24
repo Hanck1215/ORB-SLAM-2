@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/pinecone/ORB-SLAM-2/src/ImagePyramid.cpp" "/home/pinecone/ORB-SLAM-2/build/src/CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.o"
   "/home/pinecone/ORB-SLAM-2/src/KeyPointExtractorPyramid.cpp" "/home/pinecone/ORB-SLAM-2/build/src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractorPyramid.cpp.o"
+  "/home/pinecone/ORB-SLAM-2/src/KeyPointsRegionalQuadTree.cpp" "/home/pinecone/ORB-SLAM-2/build/src/CMakeFiles/myORB-SLAM2.dir/KeyPointsRegionalQuadTree.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -70,15 +70,15 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "myORB-SLAM2::@145eef247bfb46b6828c",
-					"jsonFile" : "target-myORB-SLAM2-Release-2203a464ae7b54f43ba7.json",
+					"jsonFile" : "target-myORB-SLAM2-Release-7793d313811613ba0274.json",
 					"name" : "myORB-SLAM2",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
-					"id" : "testKeyPointExtractorPyramid_00::@36f028580bb02cc8272a",
-					"jsonFile" : "target-testKeyPointExtractorPyramid_00-Release-54a805f0f4a4a6ae0350.json",
-					"name" : "testKeyPointExtractorPyramid_00",
+					"id" : "testKeyPointDistributorPyramid_00::@36f028580bb02cc8272a",
+					"jsonFile" : "target-testKeyPointDistributorPyramid_00-Release-dfb5687b1a0b48692dc3.json",
+					"name" : "testKeyPointDistributorPyramid_00",
 					"projectIndex" : 0
 				}
 			]

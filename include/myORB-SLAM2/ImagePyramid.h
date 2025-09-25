@@ -34,13 +34,13 @@ class ImagePyramid {
         inline float getScaleFactor() { return mScaleFactor; }
 
         // 存取 每一層影像中應提取的「特徵點數」
-        inline const vector<int>& getFeaturesPerLevel() { return mvnFeaturesPerLevel; }
+        inline vector<int> getFeaturesPerLevel() { return mvnFeaturesPerLevel; }
 
         // 存取 每一層影像相較於第一層影像的「縮小倍數」
-        inline const vector<float>& getScaleFactors() { return mvScaleFactor; }
+        inline const vector<float> getScaleFactors() { return mvScaleFactor; }
 
         // 存取 每一層影像恢復為第一層影像大小所需的「縮放倍數」
-        inline const vector<float>& getInvScaleFactors() { return mvInvScaleFactor; }
+        inline const vector<float> getInvScaleFactors() { return mvInvScaleFactor; }
 
         // 存取 每一層影像的矩陣
         inline const vector<Mat>& getImages() { return mvImage; }

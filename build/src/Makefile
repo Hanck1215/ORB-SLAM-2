@@ -152,6 +152,33 @@ ImagePyramid.cpp.s:
 	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.s
 .PHONY : ImagePyramid.cpp.s
 
+KeyPointDistributorPyramid.o: KeyPointDistributorPyramid.cpp.o
+
+.PHONY : KeyPointDistributorPyramid.o
+
+# target to build an object file
+KeyPointDistributorPyramid.cpp.o:
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/KeyPointDistributorPyramid.cpp.o
+.PHONY : KeyPointDistributorPyramid.cpp.o
+
+KeyPointDistributorPyramid.i: KeyPointDistributorPyramid.cpp.i
+
+.PHONY : KeyPointDistributorPyramid.i
+
+# target to preprocess a source file
+KeyPointDistributorPyramid.cpp.i:
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/KeyPointDistributorPyramid.cpp.i
+.PHONY : KeyPointDistributorPyramid.cpp.i
+
+KeyPointDistributorPyramid.s: KeyPointDistributorPyramid.cpp.s
+
+.PHONY : KeyPointDistributorPyramid.s
+
+# target to generate assembly for a file
+KeyPointDistributorPyramid.cpp.s:
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f src/CMakeFiles/myORB-SLAM2.dir/build.make src/CMakeFiles/myORB-SLAM2.dir/KeyPointDistributorPyramid.cpp.s
+.PHONY : KeyPointDistributorPyramid.cpp.s
+
 KeyPointExtractorPyramid.o: KeyPointExtractorPyramid.cpp.o
 
 .PHONY : KeyPointExtractorPyramid.o
@@ -218,6 +245,9 @@ help:
 	@echo "... ImagePyramid.o"
 	@echo "... ImagePyramid.i"
 	@echo "... ImagePyramid.s"
+	@echo "... KeyPointDistributorPyramid.o"
+	@echo "... KeyPointDistributorPyramid.i"
+	@echo "... KeyPointDistributorPyramid.s"
 	@echo "... KeyPointExtractorPyramid.o"
 	@echo "... KeyPointExtractorPyramid.i"
 	@echo "... KeyPointExtractorPyramid.s"

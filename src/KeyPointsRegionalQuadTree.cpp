@@ -43,26 +43,45 @@ namespace my_ORB_SLAM2 {
     @brief 對指定的節點進行分裂 
         
     @param[in] node 指定要分裂的節點迭代器*/
-    void KeyPointsRegionalQuadTree::divide(list<KeyPointsRegionalQuadTreeNode>::iterator &node) {
-        if(node->locked) { return; }
+    list<KeyPointsRegionalQuadTreeNode>::iterator 
+    KeyPointsRegionalQuadTree::divide(list<KeyPointsRegionalQuadTreeNode>::iterator &node) {
+        if(node->locked) { return ++node; }
         
         int nKeyPoints = node->vpKeyPoints.size();
         KeyPointsRegionalQuadTreeNode node00, node01, node10, node11;
-        node00.xmin = node->xmin; node01.xmin = node->xmid;
-        node00.ymin = node->ymin; node01.ymin = node->ymin;
-        node00.xmax = node->xmid; node01.xmax = node->xmax;
-        node00.ymax = node->ymid; node01.ymax = node->ymid;
+        node00.xmin = node->xmin; 
+        node00.ymin = node->ymin; 
+        node00.xmax = node->xmid; 
+        node00.ymax = node->ymid; 
+        node00.xmid = int((float)(node00.xmax + node00.xmin) * 0.5);
+        node00.ymid = int((float)(node00.ymax + node00.ymin) * 0.5);
 
-        node10.xmin = node->xmin; node11.xmin = node->xmid;
-        node10.ymin = node->ymid; node11.ymin = node->ymid;
-        node10.xmax = node->xmid; node11.xmax = node->xmax;
-        node10.ymax = node->ymax; node11.ymax = node->ymax;
+        node01.xmin = node->xmid;
+        node01.ymin = node->ymin;
+        node01.xmax = node->xmax;
+        node01.ymax = node->ymid;
+        node01.xmid = int((float)(node01.xmax + node01.xmin) * 0.5);
+        node01.ymid = int((float)(node01.ymax + node01.ymin) * 0.5);
+
+        node10.xmin = node->xmin; 
+        node10.ymin = node->ymid; 
+        node10.xmax = node->xmid; 
+        node10.ymax = node->ymax;
+        node10.xmid = int((float)(node10.xmax + node10.xmin) * 0.5);
+        node10.ymid = int((float)(node10.ymax + node10.ymin) * 0.5);
+
+        node11.xmin = node->xmid;
+        node11.ymin = node->ymid;
+        node11.xmax = node->xmax;
+        node11.ymax = node->ymax;
+        node11.xmid = int((float)(node11.xmax + node11.xmin) * 0.5);
+        node11.ymid = int((float)(node11.ymax + node11.ymin) * 0.5);
 
         node00.vpKeyPoints.reserve(nKeyPoints);
         node01.vpKeyPoints.reserve(nKeyPoints);
         node10.vpKeyPoints.reserve(nKeyPoints);
         node11.vpKeyPoints.reserve(nKeyPoints);
-
+        
         for(KeyPoint* &keyPoint : node->vpKeyPoints) {
             if(keyPoint->pt.x < node->xmid && keyPoint->pt.y < node->ymid) {
                 node00.vpKeyPoints.push_back(keyPoint);
@@ -74,6 +93,11 @@ namespace my_ORB_SLAM2 {
                 node11.vpKeyPoints.push_back(keyPoint);
             }
         }
+
+        node00.locked = (node00.vpKeyPoints.size() == 1);
+        node01.locked = (node01.vpKeyPoints.size() == 1);
+        node10.locked = (node10.vpKeyPoints.size() == 1);
+        node11.locked = (node11.vpKeyPoints.size() == 1);
         
         if(node00.vpKeyPoints.size() > 0)
             lNodes.push_front(node00);
@@ -87,6 +111,6 @@ namespace my_ORB_SLAM2 {
         if(node11.vpKeyPoints.size() > 0)
             lNodes.push_front(node11);
 
-        node = lNodes.erase(node);
+        return lNodes.erase(node);
     }
 }

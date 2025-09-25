@@ -4,6 +4,13 @@
 src/CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.o: ../include/myORB-SLAM2/ImagePyramid.h
 src/CMakeFiles/myORB-SLAM2.dir/ImagePyramid.cpp.o: ../src/ImagePyramid.cpp
 
+src/CMakeFiles/myORB-SLAM2.dir/KeyPointDistributorPyramid.cpp.o: ../include/myORB-SLAM2/KeyPointDistributorPyramid.h
+src/CMakeFiles/myORB-SLAM2.dir/KeyPointDistributorPyramid.cpp.o: ../include/myORB-SLAM2/KeyPointsRegionalQuadTree.h
+src/CMakeFiles/myORB-SLAM2.dir/KeyPointDistributorPyramid.cpp.o: ../src/KeyPointDistributorPyramid.cpp
+
 src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractorPyramid.cpp.o: ../include/myORB-SLAM2/KeyPointExtractorPyramid.h
 src/CMakeFiles/myORB-SLAM2.dir/KeyPointExtractorPyramid.cpp.o: ../src/KeyPointExtractorPyramid.cpp
+
+src/CMakeFiles/myORB-SLAM2.dir/KeyPointsRegionalQuadTree.cpp.o: ../include/myORB-SLAM2/KeyPointsRegionalQuadTree.h
+src/CMakeFiles/myORB-SLAM2.dir/KeyPointsRegionalQuadTree.cpp.o: ../src/KeyPointsRegionalQuadTree.cpp
 

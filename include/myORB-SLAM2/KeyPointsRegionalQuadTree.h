@@ -41,7 +41,7 @@ class KeyPointsRegionalQuadTree {
         @brief 對指定的節點進行分裂 
             
         @param[in] node 指定要分裂的節點的迭代器*/
-        void divide(list<KeyPointsRegionalQuadTreeNode>::iterator &node);
+        list<KeyPointsRegionalQuadTreeNode>::iterator divide(list<KeyPointsRegionalQuadTreeNode>::iterator &node);
 };
 
 }

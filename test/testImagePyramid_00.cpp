@@ -28,7 +28,7 @@ int main(int argc, char **argv) {
     printf("Setting Images costs: %f\n", time_used.count());
 
     // 獲取影像金字塔的所有層影像
-    vector<Mat> images = imagePyramid.getImages();
+    vector<Mat> images = imagePyramid.mvImage;
 
     // 遍歷影像金字塔的每一層，並顯示影像
     int level = 0;

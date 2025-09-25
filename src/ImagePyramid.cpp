@@ -1,6 +1,4 @@
-#include <opencv2/core/core.hpp>
 #include "myORB-SLAM2/ImagePyramid.h"
-#include <opencv2/imgproc/imgproc.hpp>
 
 namespace my_ORB_SLAM2 {
     /*

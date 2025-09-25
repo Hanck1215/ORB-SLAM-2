@@ -111,46 +111,46 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/testKeyPointDistributorPyramid_00.dir/rule:
-	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testKeyPointDistributorPyramid_00.dir/rule
-.PHONY : test/CMakeFiles/testKeyPointDistributorPyramid_00.dir/rule
+test/CMakeFiles/testImagePyramid_00.dir/rule:
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testImagePyramid_00.dir/rule
+.PHONY : test/CMakeFiles/testImagePyramid_00.dir/rule
 
 # Convenience name for target.
-testKeyPointDistributorPyramid_00: test/CMakeFiles/testKeyPointDistributorPyramid_00.dir/rule
+testImagePyramid_00: test/CMakeFiles/testImagePyramid_00.dir/rule
 
-.PHONY : testKeyPointDistributorPyramid_00
+.PHONY : testImagePyramid_00
 
 # fast build rule for target.
-testKeyPointDistributorPyramid_00/fast:
-	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f test/CMakeFiles/testKeyPointDistributorPyramid_00.dir/build.make test/CMakeFiles/testKeyPointDistributorPyramid_00.dir/build
-.PHONY : testKeyPointDistributorPyramid_00/fast
+testImagePyramid_00/fast:
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f test/CMakeFiles/testImagePyramid_00.dir/build.make test/CMakeFiles/testImagePyramid_00.dir/build
+.PHONY : testImagePyramid_00/fast
 
-testKeyPointDistributorPyramid_00.o: testKeyPointDistributorPyramid_00.cpp.o
+testImagePyramid_00.o: testImagePyramid_00.cpp.o
 
-.PHONY : testKeyPointDistributorPyramid_00.o
+.PHONY : testImagePyramid_00.o
 
 # target to build an object file
-testKeyPointDistributorPyramid_00.cpp.o:
-	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f test/CMakeFiles/testKeyPointDistributorPyramid_00.dir/build.make test/CMakeFiles/testKeyPointDistributorPyramid_00.dir/testKeyPointDistributorPyramid_00.cpp.o
-.PHONY : testKeyPointDistributorPyramid_00.cpp.o
+testImagePyramid_00.cpp.o:
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f test/CMakeFiles/testImagePyramid_00.dir/build.make test/CMakeFiles/testImagePyramid_00.dir/testImagePyramid_00.cpp.o
+.PHONY : testImagePyramid_00.cpp.o
 
-testKeyPointDistributorPyramid_00.i: testKeyPointDistributorPyramid_00.cpp.i
+testImagePyramid_00.i: testImagePyramid_00.cpp.i
 
-.PHONY : testKeyPointDistributorPyramid_00.i
+.PHONY : testImagePyramid_00.i
 
 # target to preprocess a source file
-testKeyPointDistributorPyramid_00.cpp.i:
-	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f test/CMakeFiles/testKeyPointDistributorPyramid_00.dir/build.make test/CMakeFiles/testKeyPointDistributorPyramid_00.dir/testKeyPointDistributorPyramid_00.cpp.i
-.PHONY : testKeyPointDistributorPyramid_00.cpp.i
+testImagePyramid_00.cpp.i:
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f test/CMakeFiles/testImagePyramid_00.dir/build.make test/CMakeFiles/testImagePyramid_00.dir/testImagePyramid_00.cpp.i
+.PHONY : testImagePyramid_00.cpp.i
 
-testKeyPointDistributorPyramid_00.s: testKeyPointDistributorPyramid_00.cpp.s
+testImagePyramid_00.s: testImagePyramid_00.cpp.s
 
-.PHONY : testKeyPointDistributorPyramid_00.s
+.PHONY : testImagePyramid_00.s
 
 # target to generate assembly for a file
-testKeyPointDistributorPyramid_00.cpp.s:
-	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f test/CMakeFiles/testKeyPointDistributorPyramid_00.dir/build.make test/CMakeFiles/testKeyPointDistributorPyramid_00.dir/testKeyPointDistributorPyramid_00.cpp.s
-.PHONY : testKeyPointDistributorPyramid_00.cpp.s
+testImagePyramid_00.cpp.s:
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f test/CMakeFiles/testImagePyramid_00.dir/build.make test/CMakeFiles/testImagePyramid_00.dir/testImagePyramid_00.cpp.s
+.PHONY : testImagePyramid_00.cpp.s
 
 # Help Target
 help:
@@ -160,10 +160,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... testKeyPointDistributorPyramid_00"
-	@echo "... testKeyPointDistributorPyramid_00.o"
-	@echo "... testKeyPointDistributorPyramid_00.i"
-	@echo "... testKeyPointDistributorPyramid_00.s"
+	@echo "... testImagePyramid_00"
+	@echo "... testImagePyramid_00.o"
+	@echo "... testImagePyramid_00.i"
+	@echo "... testImagePyramid_00.s"
 .PHONY : help
 
 

@@ -14,7 +14,7 @@ int main(int argc, char **argv) {
     string path = argv[1];
     Mat image = imread(path, 0);
 
-    // 設定影像金字塔、關鍵點提取器
+    // 設定影像金字塔、關鍵點提取器、關鍵點均勻器
     ImagePyramid imagePyramid(3, 1.2, 2000);
     vector<vector<KeyPoint>> vvKeyPointsPerLevel;
     KeyPointExtractorPyramid keyPointExtractorPyramid(imagePyramid.mnLevels, 30.0f, 19, imagePyramid.mnPoints, 20, 7);

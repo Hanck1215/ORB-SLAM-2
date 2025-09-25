@@ -13,7 +13,7 @@ namespace my_ORB_SLAM2 {
 class KeyPointExtractorPyramid {
     public:
         /*
-        @brief 設定關鍵點提取器
+        @brief 影像金字塔概念的關鍵點提取器
         
         @param[in] mnLevels 影像金字塔的層數
         @param[in] mfDefaultGridSize 預設每個小格子的尺寸

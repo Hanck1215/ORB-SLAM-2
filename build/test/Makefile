@@ -111,46 +111,46 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/testImagePyramid_00.dir/rule:
-	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testImagePyramid_00.dir/rule
-.PHONY : test/CMakeFiles/testImagePyramid_00.dir/rule
+test/CMakeFiles/testKeyPointExtractorPyramid_00.dir/rule:
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testKeyPointExtractorPyramid_00.dir/rule
+.PHONY : test/CMakeFiles/testKeyPointExtractorPyramid_00.dir/rule
 
 # Convenience name for target.
-testImagePyramid_00: test/CMakeFiles/testImagePyramid_00.dir/rule
+testKeyPointExtractorPyramid_00: test/CMakeFiles/testKeyPointExtractorPyramid_00.dir/rule
 
-.PHONY : testImagePyramid_00
+.PHONY : testKeyPointExtractorPyramid_00
 
 # fast build rule for target.
-testImagePyramid_00/fast:
-	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f test/CMakeFiles/testImagePyramid_00.dir/build.make test/CMakeFiles/testImagePyramid_00.dir/build
-.PHONY : testImagePyramid_00/fast
+testKeyPointExtractorPyramid_00/fast:
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f test/CMakeFiles/testKeyPointExtractorPyramid_00.dir/build.make test/CMakeFiles/testKeyPointExtractorPyramid_00.dir/build
+.PHONY : testKeyPointExtractorPyramid_00/fast
 
-testImagePyramid_00.o: testImagePyramid_00.cpp.o
+testKeyPointExtractorPyramid_00.o: testKeyPointExtractorPyramid_00.cpp.o
 
-.PHONY : testImagePyramid_00.o
+.PHONY : testKeyPointExtractorPyramid_00.o
 
 # target to build an object file
-testImagePyramid_00.cpp.o:
-	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f test/CMakeFiles/testImagePyramid_00.dir/build.make test/CMakeFiles/testImagePyramid_00.dir/testImagePyramid_00.cpp.o
-.PHONY : testImagePyramid_00.cpp.o
+testKeyPointExtractorPyramid_00.cpp.o:
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f test/CMakeFiles/testKeyPointExtractorPyramid_00.dir/build.make test/CMakeFiles/testKeyPointExtractorPyramid_00.dir/testKeyPointExtractorPyramid_00.cpp.o
+.PHONY : testKeyPointExtractorPyramid_00.cpp.o
 
-testImagePyramid_00.i: testImagePyramid_00.cpp.i
+testKeyPointExtractorPyramid_00.i: testKeyPointExtractorPyramid_00.cpp.i
 
-.PHONY : testImagePyramid_00.i
+.PHONY : testKeyPointExtractorPyramid_00.i
 
 # target to preprocess a source file
-testImagePyramid_00.cpp.i:
-	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f test/CMakeFiles/testImagePyramid_00.dir/build.make test/CMakeFiles/testImagePyramid_00.dir/testImagePyramid_00.cpp.i
-.PHONY : testImagePyramid_00.cpp.i
+testKeyPointExtractorPyramid_00.cpp.i:
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f test/CMakeFiles/testKeyPointExtractorPyramid_00.dir/build.make test/CMakeFiles/testKeyPointExtractorPyramid_00.dir/testKeyPointExtractorPyramid_00.cpp.i
+.PHONY : testKeyPointExtractorPyramid_00.cpp.i
 
-testImagePyramid_00.s: testImagePyramid_00.cpp.s
+testKeyPointExtractorPyramid_00.s: testKeyPointExtractorPyramid_00.cpp.s
 
-.PHONY : testImagePyramid_00.s
+.PHONY : testKeyPointExtractorPyramid_00.s
 
 # target to generate assembly for a file
-testImagePyramid_00.cpp.s:
-	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f test/CMakeFiles/testImagePyramid_00.dir/build.make test/CMakeFiles/testImagePyramid_00.dir/testImagePyramid_00.cpp.s
-.PHONY : testImagePyramid_00.cpp.s
+testKeyPointExtractorPyramid_00.cpp.s:
+	cd /home/pinecone/ORB-SLAM-2/build && $(MAKE) -f test/CMakeFiles/testKeyPointExtractorPyramid_00.dir/build.make test/CMakeFiles/testKeyPointExtractorPyramid_00.dir/testKeyPointExtractorPyramid_00.cpp.s
+.PHONY : testKeyPointExtractorPyramid_00.cpp.s
 
 # Help Target
 help:
@@ -160,10 +160,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... testImagePyramid_00"
-	@echo "... testImagePyramid_00.o"
-	@echo "... testImagePyramid_00.i"
-	@echo "... testImagePyramid_00.s"
+	@echo "... testKeyPointExtractorPyramid_00"
+	@echo "... testKeyPointExtractorPyramid_00.o"
+	@echo "... testKeyPointExtractorPyramid_00.i"
+	@echo "... testKeyPointExtractorPyramid_00.s"
 .PHONY : help
 
 

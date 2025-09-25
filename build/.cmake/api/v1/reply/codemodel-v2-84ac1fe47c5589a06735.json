@@ -76,9 +76,9 @@
 				},
 				{
 					"directoryIndex" : 2,
-					"id" : "testImagePyramid_00::@36f028580bb02cc8272a",
-					"jsonFile" : "target-testImagePyramid_00-Release-c35bc33a04674e1b40ec.json",
-					"name" : "testImagePyramid_00",
+					"id" : "testKeyPointExtractorPyramid_00::@36f028580bb02cc8272a",
+					"jsonFile" : "target-testKeyPointExtractorPyramid_00-Release-54a805f0f4a4a6ae0350.json",
+					"name" : "testKeyPointExtractorPyramid_00",
 					"projectIndex" : 0
 				}
 			]

@@ -29,7 +29,7 @@ class ImagePyramid {
 
         int mnLevels; // 影像金字塔的層數
         int mnFeatures; // 總共需要提取的特徵點數量
-        float mScaleFactor; // 每層之間的縮放係數
+        float mfScaleFactor; // 每層之間的縮放係數
 
         vector<int> mvnFeaturesPerLevel; // 儲存每一層影像中應提取的「特徵點數」
         vector<float> mvScaleFactors; // 儲存每一層影像相較於第一層影像的「縮小倍數」
@@ -41,7 +41,7 @@ class ImagePyramid {
         void info() {
             printf("Image Pyramid Information: \n");
             printf(" - Levels: %d\n", mnLevels);
-            printf(" - Scale Factor: %f\n", mScaleFactor);
+            printf(" - Scale Factor: %f\n", mfScaleFactor);
             printf(" - Number of Features: %d\n", mnFeatures);
             
             printf("\n - Features Per Level: \n");

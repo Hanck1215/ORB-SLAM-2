@@ -10,8 +10,8 @@ namespace my_ORB_SLAM2 {
     ImagePyramid::ImagePyramid(int nLevels, float fScaleFactor, int nFeatures) {
         // 初始化影像金字塔基礎參數
         mnLevels = nLevels;
-        mnFeatures = fScaleFactor;
-        mScaleFactor = nFeatures;
+        mnFeatures = nFeatures;
+        mfScaleFactor = fScaleFactor;
 
         // 初始化資料結構大小以符合影像金字塔層數
         mvnFeaturesPerLevel.resize(mnLevels);
@@ -23,13 +23,13 @@ namespace my_ORB_SLAM2 {
         mvScaleFactors[0] = 1.0f;
         mvInvScaleFactors[0] = 1.0f;
         for(int level = 1; level < mnLevels; level++) {
-            mvScaleFactors[level] = mvScaleFactors[level-1] * mScaleFactor;
+            mvScaleFactors[level] = mvScaleFactors[level-1] * mfScaleFactor;
             mvInvScaleFactors[level] = 1.0f / mvScaleFactors[level];
         }
 
         // 計算影像金字塔中每一層應提取的特徵點數量 (根據公式)
         int sumFeatures = 0;
-        float factor = 1.0f / mScaleFactor;
+        float factor = 1.0f / mfScaleFactor;
         float nDesiredFeaturesPerScale = (mnFeatures*(1-factor)) / (1-(float)pow((double)factor, (double)mnLevels));
         for(int level = 0; level < mnLevels-1; level++) {
             mvnFeaturesPerLevel[level] = cvRound(nDesiredFeaturesPerScale);

@@ -15,16 +15,16 @@ namespace my_ORB_SLAM2 {
 
         // 初始化資料結構大小以符合影像金字塔層數
         mvnFeaturesPerLevel.resize(mnLevels);
-        mvScaleFactors.resize(mnLevels);
-        mvInvScaleFactors.resize(mnLevels);
+        mvfScaleFactors.resize(mnLevels);
+        mvfInvScaleFactors.resize(mnLevels);
         mvImages.resize(mnLevels);
 
         // 初始化影像金字塔中，每一層的縮小倍數與反向縮放倍數
-        mvScaleFactors[0] = 1.0f;
-        mvInvScaleFactors[0] = 1.0f;
+        mvfScaleFactors[0] = 1.0f;
+        mvfInvScaleFactors[0] = 1.0f;
         for(int level = 1; level < mnLevels; level++) {
-            mvScaleFactors[level] = mvScaleFactors[level-1] * mfScaleFactor;
-            mvInvScaleFactors[level] = 1.0f / mvScaleFactors[level];
+            mvfScaleFactors[level] = mvfScaleFactors[level-1] * mfScaleFactor;
+            mvfInvScaleFactors[level] = 1.0f / mvfScaleFactors[level];
         }
 
         // 計算影像金字塔中每一層應提取的特徵點數量 (根據公式)
@@ -48,7 +48,7 @@ namespace my_ORB_SLAM2 {
     void ImagePyramid::setImage(const Mat &image) {
         mvImages[0] = image;
         for (int level = 1; level < mnLevels; ++level) {
-            float scale = mvInvScaleFactors[level];
+            float scale = mvfInvScaleFactors[level];
             Size size(cvRound(image.cols*scale), cvRound(image.rows*scale));
             resize(mvImages[level-1], mvImages[level], size, 0, 0, INTER_NEAREST);
         }

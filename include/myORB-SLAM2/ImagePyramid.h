@@ -32,8 +32,8 @@ class ImagePyramid {
         float mfScaleFactor; // 每層之間的縮放係數
 
         vector<int> mvnFeaturesPerLevel; // 儲存每一層影像中應提取的「特徵點數」
-        vector<float> mvScaleFactors; // 儲存每一層影像相較於第一層影像的「縮小倍數」
-        vector<float> mvInvScaleFactors; // 儲存每一層影像恢復為第一層影像大小所需的「縮放倍數」
+        vector<float> mvfScaleFactors; // 儲存每一層影像相較於第一層影像的「縮小倍數」
+        vector<float> mvfInvScaleFactors; // 儲存每一層影像恢復為第一層影像大小所需的「縮放倍數」
         vector<Mat> mvImages; // 儲存每一層影像的矩陣
     
     private :
@@ -52,14 +52,14 @@ class ImagePyramid {
 
             printf("\n - Scale Factors: \n");
             printf(" { ");
-            for(int i = 0; i < mnLevels-1; i++) { printf("%f, ", mvScaleFactors[i]); }
-            printf("%f", mvScaleFactors[mnLevels-1]);
+            for(int i = 0; i < mnLevels-1; i++) { printf("%f, ", mvfScaleFactors[i]); }
+            printf("%f", mvfScaleFactors[mnLevels-1]);
             printf(" }\n");
 
             printf("\n - Inv Scale Factors: \n");
             printf(" { ");
-            for(int i = 0; i < mnLevels-1; i++) { printf("%f, ", mvInvScaleFactors[i]); }
-            printf("%f", mvInvScaleFactors[mnLevels-1]);
+            for(int i = 0; i < mnLevels-1; i++) { printf("%f, ", mvfInvScaleFactors[i]); }
+            printf("%f", mvfInvScaleFactors[mnLevels-1]);
             printf(" }\n");
         }
 };

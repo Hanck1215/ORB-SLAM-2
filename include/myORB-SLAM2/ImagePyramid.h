@@ -16,19 +16,19 @@ namespace my_ORB_SLAM2 {
 class ImagePyramid {
     public :
         /*
-        @brief 設定影像金字塔參數
+        @brief 影像金字塔
         
-        @param[in] m 影像金字塔的層數
-        @param[in] s 每層之間的縮放係數 (例如 1.2) 
-        @param[in] N 總共需要提取的特徵點數量 */
-        ImagePyramid (int m, float s, int N);
+        @param[in] nLevels 影像金字塔的層數
+        @param[in] fScaleFactor 每層之間的縮放因子 (例如 1.2) 
+        @param[in] nFeatures 總共需要提取的特徵點數量 */
+        ImagePyramid (int nLevels, float fScaleFactor, int nFeatures);
         ~ImagePyramid () {};
 
         // 設定影像 : 將不同縮放倍率的影像依序放入影像金字塔中
         void setImage(const Mat &image);
 
         int mnLevels; // 影像金字塔的層數
-        int mnPoints; // 總共需要提取的特徵點數量
+        int mnFeatures; // 總共需要提取的特徵點數量
         float mScaleFactor; // 每層之間的縮放係數
 
         vector<int> mvnFeaturesPerLevel; // 儲存每一層影像中應提取的「特徵點數」
@@ -42,7 +42,7 @@ class ImagePyramid {
             printf("Image Pyramid Information: \n");
             printf(" - Levels: %d\n", mnLevels);
             printf(" - Scale Factor: %f\n", mScaleFactor);
-            printf(" - Number of Features: %d\n", mnPoints);
+            printf(" - Number of Features: %d\n", mnFeatures);
             
             printf("\n - Features Per Level: \n");
             printf(" { ");

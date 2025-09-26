@@ -21,7 +21,22 @@
 },
 {
   "directory": "/home/pinecone/ORB-SLAM-2/build/test",
+  "command": "/usr/bin/g++   -I/usr/include/eigen3 -I/home/pinecone/ORB-SLAM-2/include -I/home/pinecone/ORB-SLAM-2 -isystem /usr/local/include/opencv  -std=c++17 -O3 -O3 -DNDEBUG   -o CMakeFiles/testKeyPointExtractorPyramid_00.dir/testKeyPointExtractorPyramid_00.cpp.o -c /home/pinecone/ORB-SLAM-2/test/testKeyPointExtractorPyramid_00.cpp",
+  "file": "/home/pinecone/ORB-SLAM-2/test/testKeyPointExtractorPyramid_00.cpp"
+},
+{
+  "directory": "/home/pinecone/ORB-SLAM-2/build/test",
   "command": "/usr/bin/g++   -I/usr/include/eigen3 -I/home/pinecone/ORB-SLAM-2/include -I/home/pinecone/ORB-SLAM-2 -isystem /usr/local/include/opencv  -std=c++17 -O3 -O3 -DNDEBUG   -o CMakeFiles/testKeyPointDistributorPyramid_01.dir/testKeyPointDistributorPyramid_01.cpp.o -c /home/pinecone/ORB-SLAM-2/test/testKeyPointDistributorPyramid_01.cpp",
   "file": "/home/pinecone/ORB-SLAM-2/test/testKeyPointDistributorPyramid_01.cpp"
+},
+{
+  "directory": "/home/pinecone/ORB-SLAM-2/build/test",
+  "command": "/usr/bin/g++   -I/usr/include/eigen3 -I/home/pinecone/ORB-SLAM-2/include -I/home/pinecone/ORB-SLAM-2 -isystem /usr/local/include/opencv  -std=c++17 -O3 -O3 -DNDEBUG   -o CMakeFiles/testKeyPointDistributorPyramid_00.dir/testKeyPointDistributorPyramid_00.cpp.o -c /home/pinecone/ORB-SLAM-2/test/testKeyPointDistributorPyramid_00.cpp",
+  "file": "/home/pinecone/ORB-SLAM-2/test/testKeyPointDistributorPyramid_00.cpp"
+},
+{
+  "directory": "/home/pinecone/ORB-SLAM-2/build/test",
+  "command": "/usr/bin/g++   -I/usr/include/eigen3 -I/home/pinecone/ORB-SLAM-2/include -I/home/pinecone/ORB-SLAM-2 -isystem /usr/local/include/opencv  -std=c++17 -O3 -O3 -DNDEBUG   -o CMakeFiles/testImagePyramid_00.dir/testImagePyramid_00.cpp.o -c /home/pinecone/ORB-SLAM-2/test/testImagePyramid_00.cpp",
+  "file": "/home/pinecone/ORB-SLAM-2/test/testImagePyramid_00.cpp"
 }
 ]

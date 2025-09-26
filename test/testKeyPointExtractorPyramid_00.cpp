@@ -14,7 +14,7 @@ int main(int argc, char **argv) {
 
     // 宣告關鍵點提取器，以及關鍵點金字塔容器
     vector<vector<KeyPoint>> vvKeyPointsPerLevel;
-    KeyPointExtractorPyramid KeyPointExtractorPyramid(imagePyramid.mnLevels, 30.0f, 19, imagePyramid.mnPoints, 20, 7);
+    KeyPointExtractorPyramid KeyPointExtractorPyramid(imagePyramid.mnLevels, 30.0f, 19, imagePyramid.mnFeatures, 20, 7);
     
     // 設定影像到影像金字塔
     imagePyramid.setImage(image);

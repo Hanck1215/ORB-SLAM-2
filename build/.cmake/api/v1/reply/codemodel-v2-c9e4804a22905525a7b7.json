@@ -43,7 +43,10 @@
 					"source" : "test",
 					"targetIndexes" : 
 					[
-						1
+						1,
+						2,
+						3,
+						4
 					]
 				}
 			],
@@ -61,7 +64,10 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2,
+						3,
+						4
 					]
 				}
 			],
@@ -76,9 +82,30 @@
 				},
 				{
 					"directoryIndex" : 2,
+					"id" : "testImagePyramid_00::@36f028580bb02cc8272a",
+					"jsonFile" : "target-testImagePyramid_00-Release-c35bc33a04674e1b40ec.json",
+					"name" : "testImagePyramid_00",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "testKeyPointDistributorPyramid_00::@36f028580bb02cc8272a",
+					"jsonFile" : "target-testKeyPointDistributorPyramid_00-Release-1d897b91b3a211559be1.json",
+					"name" : "testKeyPointDistributorPyramid_00",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
 					"id" : "testKeyPointDistributorPyramid_01::@36f028580bb02cc8272a",
-					"jsonFile" : "target-testKeyPointDistributorPyramid_01-Release-40b7a2b09c6e9d078d2d.json",
+					"jsonFile" : "target-testKeyPointDistributorPyramid_01-Release-f971f22d5852f63d9f4b.json",
 					"name" : "testKeyPointDistributorPyramid_01",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "testKeyPointExtractorPyramid_00::@36f028580bb02cc8272a",
+					"jsonFile" : "target-testKeyPointExtractorPyramid_00-Release-9f069a99dce05a5c0f3a.json",
+					"name" : "testKeyPointExtractorPyramid_00",
 					"projectIndex" : 0
 				}
 			]
